@@ -1,0 +1,35 @@
+# Godot: dados importados e cache local.
+.godot/
+.mono/
+
+# .NET e IDEs.
+**/bin/
+**/obj/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Exportações e credenciais locais do Godot 4.
+/build/
+export_credentials.cfg
+*.pfx
+*.p12
+
+# Temporários de edição e do sistema operacional.
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Preservar fontes humanas, .uid e .import: fazem parte dos recursos versionados.
