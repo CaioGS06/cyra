@@ -6,7 +6,7 @@ Registros iniciados em **20/10/2026**, conforme a execução real, mesmo que a j
 
 | ID | Data | Ativ. / Req. | Módulo / Script | Ferramenta / Modelo | ID do Prompt | Saída Original da IA | Intervenção / Revisão Humana | Resp. | Tempo Aprendizagem Godot | Tempo IA (Geração + Revisão + Correção) | Versão / Commit Integrado |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| D01 | 20/10 | A01 — ambiente e fluxo básico | Scripts/Test/TestActor.cs; Scripts/Test/TestSceneController.cs; Scenes/Test/TestSceneA01.tscn | Codex | [P01](Prompts_Utilizados.md) | Projeto Godot 2D .NET com ator de validação, piso, gatilho, UI e sinais nativos/personalizado, configuração Windows e documentação inicial. | [PENDENTE PREENCHIMENTO HUMANO: Descrever ajustes de código/Inspector] | [Caio/Lucas] | [PENDENTE: X min] | [Geração concluída; duração não medida; Revisão/Correção: X min] | D01, saída original preservada; [PENDENTE COMMIT] |
+| D01 | 20/10 | A01 — ambiente e fluxo básico | Scripts/Test/TestActor.cs; Scripts/Test/TestSceneController.cs; Scenes/Test/TestSceneA01.tscn | Codex | [P01](Prompts_Utilizados.md) | Projeto Godot 2D .NET com ator de validação, piso, gatilho, UI e sinais nativos/personalizado, configuração Windows e documentação inicial. | Nenhuma alteração necessária após a revisão | Caio | 78 min | Revisão/Correção: 7 min 51 s | A01: saida original Codex |
 
 ## 2. Fichas detalhadas
 
@@ -57,33 +57,31 @@ O ensaio carregou a própria cena C#, conectou um observador do sinal personaliz
 
 A primeira consulta `dotnet --info` encontrou restrição de acesso ao gerenciador de serviços; a listagem de SDKs ainda identificou 8.0.422 e 10.0.401. A primeira compilação não acessou o índice público NuGet. Foi registrada a origem local `Godot-4.7.2-local`, apontando para `GodotSharp/Tools/nupkgs` da instalação, e a compilação passou. A primeira importação sem acesso à pasta de configuração local do editor também falhou; a importação com acesso à configuração do Godot passou. Essas ocorrências são de ambiente, não foram atribuídas a falhas de lógica C#.
 
-Os templates .NET de exportação não estavam instalados. A distribuição oficial disponibiliza o pacote `Godot_v4.7.2-stable_mono_export_templates.tpz` com 1.202.598.411 bytes; o download não foi realizado. A instalação e o ensaio do pacote estão descritos no README e permanecem pendentes. Não houve cronometragem confiável; não reconstruir tempos como se tivessem sido medidos.
+Na geração inicial, os templates .NET de exportação não estavam instalados, e a tentativa automatizada de exportação falhou por esse motivo. Posteriormente, Caio instalou os templates correspondentes ao Godot .NET 4.7.2, exportou o projeto para Windows e executou o pacote fora do editor. Movimento, pulo, colisão, botão e área de gatilho funcionaram conforme esperado. As evidências estão em `docs/evidencias/T00_A01_cena.png` e `docs/evidencias/T00_A01_exportacao.png`. A reprodução dos testes por Lucas permanece pendente.
 
 **O que exigiu Curadoria / Correção Humana**
 
-- [ ] Caio/Lucas: conferir os dois scripts e a cena, incluindo nomes de nós, referências e comentários de rastreabilidade.
-- [ ] Conferir as três `CollisionShape2D`, alinhamento dos retângulos e camadas/máscaras 1 (piso) e 2 (ator).
-- [ ] Confirmar no Inspector que não foram duplicadas as conexões feitas por C#.
-- [ ] Abrir graficamente, conferir legibilidade e título inicial exato; verificar ausência de erros no depurador.
-- [ ] Testar setas, pulo, gravidade e pouso; conferir que clicar antes de mover não valida entrada.
-- [ ] Entrar/sair da área, retornar e clicar novamente no botão; conferir título e confirmações.
-- [ ] Instalar templates .NET 4.7.2, exportar, executar fora do editor e guardar a evidência T00.
+- [X] Caio/Lucas: conferir os dois scripts e a cena, incluindo nomes de nós, referências e comentários de rastreabilidade.
+- [X] Conferir as três `CollisionShape2D`, alinhamento dos retângulos e camadas/máscaras 1 (piso) e 2 (ator).
+- [X] Confirmar no Inspector que não foram duplicadas as conexões feitas por C#.
+- [X] Abrir graficamente, conferir legibilidade e título inicial exato; verificar ausência de erros no depurador.
+- [X] Testar setas, pulo, gravidade e pouso; conferir que clicar antes de mover não valida entrada.
+- [X] Entrar/sair da área, retornar e clicar novamente no botão; conferir título e confirmações.
+- [X] Instalar templates .NET 4.7.2, exportar, executar fora do editor e guardar a evidência T00.
 - [ ] O segundo desenvolvedor repetir abertura, compilação e execução em seu ambiente.
-- [ ] Preencher revisão, responsáveis, tempos efetivamente medidos e commit integrado; manter a saída original preservada.
+- [X] Preencher revisão, responsáveis, tempos efetivamente medidos e commit integrado; manter a saída original preservada.
 
-**Situação:** entrega de arquivos da A01 preparada e verificada automaticamente; A01 não encerrada metodologicamente até a exportação e a validação humana. Revisão humana: [PENDENTE PREENCHIMENTO HUMANO: Descrever ajustes de código/Inspector].
+**Situação:** entrega de arquivos da A01 preparada e verificada automaticamente; A01 não encerrada metodologicamente até a exportação e a validação humana. Revisão humana: Validada por Caio no editor e no executável Windows; aguardando reprodução por Lucas.
 
 ## 3. Tabela 3: Registro de Testes Funcionais
 
 | ID Teste | Requisito / Etapa | Condição Inicial | Passos Executados | Resultado Esperado | Resultado Observado | Situação | Evidência |
 |---|---|---|---|---|---|---|---|
-| T00 | A01 — ambiente, cena, entrada, colisão, sinais e exportação | D01 compilado; Godot .NET 4.7.2/SDK 8.0.422; templates Windows correspondentes instalados para etapa de exportação; cena reiniciada; repetir com o outro desenvolvedor | Roteiro a executar: 1. Abrir projeto e compilar. 2. Executar e observar texto inicial e queda. 3. Clicar no botão antes de mover. 4. Mover nas duas direções e pular. 5. Entrar na área e voltar a entrar. 6. Clicar novamente no botão. 7. Conferir depurador. 8. Exportar release, fechar editor e repetir no executável. 9. Repetir abertura/execução no ambiente do outro desenvolvedor. | Texto inicial exato “Cyra em teste”; ator repousa sobre o piso, anda e pula sem atravessá-lo; clique isolado mantém entrada pendente; área e botão emitem sinais nativos e personalizado com título preservado; indicadores confirmam eventos reais; zero erros; pacote completo abre fora do editor; ambos reproduzem o fluxo. | [Pendente execução humana] | [Pendente execução humana] | Sugestão: `docs/evidencias/T00_A01_cena.png`; `docs/evidencias/T00_A01_exportacao.png`; registrar também ambiente, versão e responsável |
-
-O texto da coluna “Passos Executados” é um roteiro preparado, não uma alegação de execução. Os logs automatizados de D01 são evidências auxiliares e não preenchem o resultado humano de T00.
+| T00 | A01 — ambiente, cena, entrada, colisão, sinais e exportação | D01 compilado; Godot .NET 4.7.2/SDK 8.0.422; templates Windows correspondentes instalados para etapa de exportação; cena reiniciada; repetir com o outro desenvolvedor | 1. Abrir projeto e compilar. 2. Executar e observar texto inicial e queda. 3. Clicar no botão antes de mover. 4. Mover nas duas direções e pular. 5. Entrar na área e voltar a entrar. 6. Clicar novamente no botão. 7. Conferir depurador. 8. Exportar release, fechar editor e repetir no executável. 9. Repetir abertura/execução no ambiente do outro desenvolvedor. | Texto inicial exato “Cyra em teste”; ator repousa sobre o piso, anda e pula sem atravessá-lo; clique isolado mantém entrada pendente; área e botão emitem sinais nativos e personalizado com título preservado; indicadores confirmam eventos reais; zero erros; pacote completo abre fora do editor; ambos reproduzem o fluxo. | Resultados esperados | Aguardando execução do segundo integrante | Sugestão: `docs/evidencias/T00_A01_cena.png`; `docs/evidencias/T00_A01_exportacao.png`; registrar também ambiente, versão e responsável |
 
 ## 4. Integração e evidências
 
-Versão original: D01. Prompt: P01. Teste: T00. Commit: [PENDENTE COMMIT]. Arquivo original e manifesto em `docs/saidas_originais/`. Capturas propostas em T00 ainda não existem. Não há métricas de desempenho, economia de tempo ou comparação manual coletadas nesta atividade.
+Versão original: D01. Prompt: P01. Teste: T00. Commit: A01: saida original Codex (9cdfcc4). Arquivo original e manifesto em `docs/saidas_originais/`. Evidências: [T00_A01_cena](evidencias/T00_A01_cena.png), [T00_A01_exportacao](evidencias/T00_A01_exportacao.png) e [TOO_A01](evidencias/T00_A01.txt).
 
 ## 5. Matriz de Revisão Cruzada e Rastreabilidade (A08)
 
@@ -91,6 +89,6 @@ Preparação documental vinculada exclusivamente à A01; não declara a execuç�
 
 | Requisito | Módulo/Script e Versão | Autor Principal | Revisor Cruzado | Achado na Revisão (Estado/Sinais/Acoplamento) | Decisão/Correção | Teste Vinculado |
 |---|---|---|---|---|---|---|
-| A01 — ciclo de vida, entrada e colisão | Scripts/Test/TestActor.cs; Scenes/Test/TestSceneA01.tscn; D01/P01; commit pendente | [Caio/Lucas — confirmar curador principal]; geração assistida por Codex | [Outro desenvolvedor — confirmar] | [PENDENTE: conferir gravidade, pulo em piso, máscaras e isolamento do ator de teste] | [PENDENTE PREENCHIMENTO HUMANO] | T00 |
-| A01 — sinais e UI de validação | Scripts/Test/TestSceneController.cs; Scenes/Test/TestSceneA01.tscn; D01/P01; commit pendente | [Caio/Lucas — confirmar curador principal]; geração assistida por Codex | [Outro desenvolvedor — confirmar] | [PENDENTE: conferir referências, conexão única, emissão personalizada, título e indicadores independentes] | [PENDENTE PREENCHIMENTO HUMANO] | T00 |
-| A01 — ambiente e pacote desktop | Cyra.csproj; Cyra.sln; global.json; project.godot; export_presets.cfg; README.md; D01/P01 | [Caio/Lucas — confirmar] | [Outro desenvolvedor — confirmar] | [PENDENTE: templates ausentes, reprodução em outra máquina e teste fora do editor] | [PENDENTE PREENCHIMENTO HUMANO] | T00 |
+| A01 — ciclo de vida, entrada e colisão | Scripts/Test/TestActor.cs; Scenes/Test/TestSceneA01.tscn; D01/P01; commit pendente | Caio; geração assistida por Codex | Lucas |  | Pendente revisão de Lucas | T00 |
+| A01 — sinais e UI de validação | Scripts/Test/TestSceneController.cs; Scenes/Test/TestSceneA01.tscn; D01/P01; commit pendente | Caio; geração assistida por Codex | Lucas |  | Pendente revisão de Lucas | T00 |
+| A01 — ambiente e pacote desktop | Cyra.csproj; Cyra.sln; global.json; project.godot; export_presets.cfg; README.md; D01/P01 | Caio | Lucas |  | Pendente revisão de Lucas | T00 |
