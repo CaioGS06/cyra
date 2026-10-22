@@ -23,10 +23,10 @@ O SDK 10.0.401 também está instalado nesta máquina, mas esta solução seleci
 ## Clonar, abrir, compilar e executar
 
 1. Instalar **Godot 4.7.2 .NET**, preservando a pasta `GodotSharp` junto ao editor, e **.NET SDK 8.0.422 x64**. A edição do Godot sem .NET não executa os scripts C#.
-2. Depois que o grupo definir/publicar o remoto, substituir o endereço abaixo pelo endereço real. Este repositório foi inicializado localmente em `main`; ainda não possui remoto nem commit.
+2. Clonar o repositório do grupo.
 
    ```powershell
-   git clone <URL_DO_REPOSITORIO_DO_GRUPO> cyra
+   git clone https://github.com/CaioGS06/cyra.git cyra
    cd cyra
    dotnet --version
    ```
@@ -77,8 +77,8 @@ Procedimento baseado na documentação oficial de [C# no Godot](https://docs.god
 - Compilação da solução: **aprovada, zero avisos e zero erros**.
 - Importação pelo editor sem janela e execução da cena principal por 120 quadros: **aprovadas**.
 - Ensaio automatizado na engine, sem janela: **14 checagens aprovadas**, cobrindo texto, queda/colisão, movimento nas duas direções, pulo e sinais nativos/personalizado. [Log real](docs/evidencias/A01_verificacao_automatica.log).
-- Exportação: **pendente**. A tentativa encontrou ausência dos dois templates Windows .NET. [Log real](docs/evidencias/A01_exportacao_pendente.log). O pacote de 1,20 GB não foi baixado nesta entrega.
-- T00, conferência visual, execução do pacote fora do editor e revisão cruzada: **pendentes de execução humana**. O ensaio automatizado não encerra esses registros.
+- Exportação Windows: **validada por Caio**, após a instalação dos templates correspondentes. A tentativa inicial que falhou permanece registrada em `docs/evidencias/A01_exportacao_pendente.log`.
+- Validação humana: **T00 aprovado por Caio e Lucas**, com execução fora do editor e revisão cruzada registrada no diário. Aprovação de Lucas: commit `46d5986`.
 
 ## Estrutura e rastreabilidade
 
@@ -99,4 +99,4 @@ O Git ignora caches, exportações e temporários, preservando `.uid` e metadado
 - [Tabela metodológica inicial](docs/Diario_Experimento_IA.md)
 - [Saída original preservada](docs/saidas_originais/D01_A01.zip), antes de revisão humana
 
-Após a curadoria, os responsáveis devem preencher os campos humanos e registrar a primeira versão integrada com um commit identificável. Nenhum commit de aprovação foi criado automaticamente.
+A saída original está preservada no commit `9cdfcc4` e no arquivo ZIP indicado acima. A versão integrada da A01 está em `6bf3e2d`, e a aprovação de Lucas está registrada em `46d5986`. Os detalhes da curadoria e das evidências ficam no diário principal.

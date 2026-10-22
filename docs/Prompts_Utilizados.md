@@ -16,4 +16,4 @@ O conteúdo integral do anexo foi preservado, sem remover escapes ou corrigir su
 
 **Saída vinculada:** [D01](Diario_Experimento_Cyra.md), [arquivo da saída original](saidas_originais/D01_A01.zip), [manifesto de integridade](saidas_originais/D01_SHA256.txt).
 
-**Intervenção humana:** [PENDENTE PREENCHIMENTO HUMANO: Descrever ajustes de código/Inspector].
+**Intervenção humana:** Caio revisou os scripts e a cena, instalou os templates e validou a execução no editor e no executável Windows. Não foram necessárias alterações funcionais no código; o histórico contém alterações de indentação. Lucas reproduziu o ambiente e aprovou o T00 e a revisão cruzada no commit `46d5986`.
