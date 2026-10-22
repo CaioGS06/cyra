@@ -68,7 +68,7 @@ Na geração inicial, os templates .NET de exportação não estavam instalados,
 - [X] Testar setas, pulo, gravidade e pouso; conferir que clicar antes de mover não valida entrada.
 - [X] Entrar/sair da área, retornar e clicar novamente no botão; conferir título e confirmações.
 - [X] Instalar templates .NET 4.7.2, exportar, executar fora do editor e guardar a evidência T00.
-- [ ] O segundo desenvolvedor repetir abertura, compilação e execução em seu ambiente.
+- [X] O segundo desenvolvedor repetir abertura, compilação e execução em seu ambiente.
 - [X] Preencher revisão, responsáveis, tempos efetivamente medidos e commit integrado; manter a saída original preservada.
 
 **Situação:** entrega de arquivos da A01 preparada e verificada automaticamente; A01 não encerrada metodologicamente até a exportação e a validação humana. Revisão humana: Validada por Caio no editor e no executável Windows; aguardando reprodução por Lucas.
@@ -77,7 +77,7 @@ Na geração inicial, os templates .NET de exportação não estavam instalados,
 
 | ID Teste | Requisito / Etapa | Condição Inicial | Passos Executados | Resultado Esperado | Resultado Observado | Situação | Evidência |
 |---|---|---|---|---|---|---|---|
-| T00 | A01 — ambiente, cena, entrada, colisão, sinais e exportação | D01 compilado; Godot .NET 4.7.2/SDK 8.0.422; templates Windows correspondentes instalados para etapa de exportação; cena reiniciada; repetir com o outro desenvolvedor | 1. Abrir projeto e compilar. 2. Executar e observar texto inicial e queda. 3. Clicar no botão antes de mover. 4. Mover nas duas direções e pular. 5. Entrar na área e voltar a entrar. 6. Clicar novamente no botão. 7. Conferir depurador. 8. Exportar release, fechar editor e repetir no executável. 9. Repetir abertura/execução no ambiente do outro desenvolvedor. | Texto inicial exato “Cyra em teste”; ator repousa sobre o piso, anda e pula sem atravessá-lo; clique isolado mantém entrada pendente; área e botão emitem sinais nativos e personalizado com título preservado; indicadores confirmam eventos reais; zero erros; pacote completo abre fora do editor; ambos reproduzem o fluxo. | Resultados esperados | Aguardando execução do segundo integrante | Sugestão: `docs/evidencias/T00_A01_cena.png`; `docs/evidencias/T00_A01_exportacao.png`; registrar também ambiente, versão e responsável |
+| T00 | A01 — ambiente, cena, entrada, colisão, sinais e exportação | D01 compilado; Godot .NET 4.7.2/SDK 8.0.422; templates Windows correspondentes instalados para etapa de exportação; cena reiniciada; repetir com o outro desenvolvedor | 1. Abrir projeto e compilar. 2. Executar e observar texto inicial e queda. 3. Clicar no botão antes de mover. 4. Mover nas duas direções e pular. 5. Entrar na área e voltar a entrar. 6. Clicar novamente no botão. 7. Conferir depurador. 8. Exportar release, fechar editor e repetir no executável. 9. Repetir abertura/execução no ambiente do outro desenvolvedor. | Texto inicial exato “Cyra em teste”; ator repousa sobre o piso, anda e pula sem atravessá-lo; clique isolado mantém entrada pendente; área e botão emitem sinais nativos e personalizado com título preservado; indicadores confirmam eventos reais; zero erros; pacote completo abre fora do editor; ambos reproduzem o fluxo. | Os resultados esperados foram observados sem divergência. | Aprovado | Sugestão: `docs/evidencias/T00_A01_cena.png`; `docs/evidencias/T00_A01_exportacao.png`; registrar também ambiente, versão e responsável |
 
 ## 4. Integração e evidências
 
@@ -89,6 +89,6 @@ Preparação documental vinculada exclusivamente à A01; não declara a execuç�
 
 | Requisito | Módulo/Script e Versão | Autor Principal | Revisor Cruzado | Achado na Revisão (Estado/Sinais/Acoplamento) | Decisão/Correção | Teste Vinculado |
 |---|---|---|---|---|---|---|
-| A01 — ciclo de vida, entrada e colisão | Scripts/Test/TestActor.cs; Scenes/Test/TestSceneA01.tscn; D01/P01; commit pendente | Caio; geração assistida por Codex | Lucas |  | Pendente revisão de Lucas | T00 |
-| A01 — sinais e UI de validação | Scripts/Test/TestSceneController.cs; Scenes/Test/TestSceneA01.tscn; D01/P01; commit pendente | Caio; geração assistida por Codex | Lucas |  | Pendente revisão de Lucas | T00 |
-| A01 — ambiente e pacote desktop | Cyra.csproj; Cyra.sln; global.json; project.godot; export_presets.cfg; README.md; D01/P01 | Caio | Lucas |  | Pendente revisão de Lucas | T00 |
+| A01 — ciclo de vida, entrada e colisão | Scripts/Test/TestActor.cs; Scenes/Test/TestSceneA01.tscn; D01/P01; commit pendente | Caio; geração assistida por Codex | Lucas | Ações funcionais | Aprovado | T00 |
+| A01 — sinais e UI de validação | Scripts/Test/TestSceneController.cs; Scenes/Test/TestSceneA01.tscn; D01/P01; commit pendente | Caio; geração assistida por Codex | Lucas | Interface funcional | Aprovado | T00 |
+| A01 — ambiente e pacote desktop | Cyra.csproj; Cyra.sln; global.json; project.godot; export_presets.cfg; README.md; D01/P01 | Caio | Lucas | Build realizada sem problemas | Aprovado | T00 |
