@@ -95,6 +95,7 @@ O controller conecta `Button.Pressed` e `Area2D.BodyEntered` por código, emite 
 O Git ignora caches, exportações e temporários, preservando `.uid` e metadados `.import`. Os diretórios ainda vazios têm `.gitkeep`. `docs/.gdignore` impede a importação dos materiais acadêmicos existentes.
 
 - [Diário principal: D01, T00 e matriz A08](docs/Diario_Experimento_Cyra.md)
+- [A02 — escopo, requisitos e modelos: revisão documental aprovada com ajustes](docs/A02_Escopo_Requisitos_Modelos.md)
 - [Prompt P01 e roteiro original preservado](docs/Prompts_Utilizados.md)
 - [Tabela metodológica inicial](docs/Diario_Experimento_IA.md)
 - [Saída original preservada](docs/saidas_originais/D01_A01.zip), antes de revisão humana

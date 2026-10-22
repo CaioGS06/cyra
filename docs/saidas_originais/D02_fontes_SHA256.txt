@@ -1,0 +1,12 @@
+# Fontes consultadas em 22/10/2026; caminhos locais, sem substituir os originais.
+eb0ac1e6a4f980349a6d8395438a5cf16da054c723dfda63e080b0f67ff647bb  C:/Users/caio/Downloads/(CLV) LES - 5 - Relatorio_Parcial_Final_ADS_assinado (1).pdf
+1fcc93cb1fecb9909faf9a8c134ad6f4825abe11786970aba0bda949f1643e15  C:/Users/caio/GIT/cyra/AGENTS.md
+725c6fe49ceb11a7e122a2f660eccbcb5306b9abfc98ed51d91834e57c86d950  C:/Users/caio/GIT/cyra/docs/Cronograma_Cyra_15-10_a_23-11-2026.md
+2805d626828eb31e5dacbdf73f9d3d5bdac825b5db3021d34991bcb97cce7188  C:/Users/caio/GIT/cyra/docs/Guia_atividades_Cyra_2026.md
+ade7845066b04ff8460ab20efe288c6d4866f0e415667230519af5197abafd1d  C:/Users/caio/GIT/cyra/docs/arquivos_tcc/Untitled.sql
+d04fd968e230c22d59495760c8c4c037c0bf7eec27ec5823b0ee0639b1f7a93f  C:/Users/caio/GIT/cyra/docs/arquivos_tcc/Untitled.svg
+7aa96731857bc57b6e796a73e2e32cb7aaf7c80a2e7dba14b38ac5817c8d7630  C:/Users/caio/GIT/cyra/docs/arquivos_tcc/Untitled.png
+7c9facc7e5f08d19d8c71dd4cff497fa22be680b3bd8f8cbf37b7b86ac39b31c  C:/Users/caio/GIT/cyra/docs/arquivos_tcc/Untitled Diagram.png
+1561297355496807af582aee76a446870c9b052e2575643d99fbbcb344c80267  C:/Users/caio/GIT/cyra/docs/arquivos_tcc/svgviewer-png-output.png
+8b6ce0969b781f96c447e134fdf258277f611f891d8c6a49b31249858c97e350  C:/Users/caio/GIT/cyra/docs/arquivos_tcc/Resumo_e_plano_minimo_Cyra.md
+b00acada88d4c3d48d4bfc4fee3873d414af3673ad1845e57af1d238eaea7bdd  C:/Users/caio/GIT/cyra/docs/arquivos_tcc/Título.docx
