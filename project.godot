@@ -14,6 +14,10 @@ config/name="Cyra"
 run/main_scene="res://Scenes/Test/TestSceneA01.tscn"
 config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 
+[autoload]
+
+TestRunRecorder="*res://Scripts/Core/TestRunRecorder.cs"
+
 [display]
 
 window/size/viewport_width=960

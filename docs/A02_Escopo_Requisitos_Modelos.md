@@ -328,7 +328,7 @@ Checklist para encerramento:
 - [x] Atualizar contrato e JSON, preservando D02 original.
 - [x] Equipe confirmou conferência da fonte/critérios e reconheceu divergência de persistência.
 - [x] Equipe aprovou adaptação UC/SQL e confirmou cinco simulações sem contradições.
-- [x] Encerrar T01 documental com ajustes e achados relatados. Identificar o commit integrado depois que o usuário o criar; hash ainda inexistente não é lacuna de revisão.
+- [x] Encerrar T01 documental com ajustes e achados relatados. Versão humana integrada: `f145393`, conferida no Git em 22/10/2026.
 
 A04/A05/A06/A07/A09 implementam os itens correspondentes; A08/A10 revisam/testam quando existirem. Nenhuma implementação é autorizada por esta revisão documental.
 
@@ -336,4 +336,4 @@ A04/A05/A06/A07/A09 implementam os itens correspondentes; A08/A10 revisam/testam
 
 A saída D02/P02 antes da curadoria permanece em [D02_A02.zip](saidas_originais/D02_A02.zip), com [manifesto](saidas_originais/D02_SHA256.txt) e [hashes das fontes](saidas_originais/D02_fontes_SHA256.txt). Não regravar esses arquivos com a versão humana.
 
-A revisão atual está vinculada a P03, D02 e [T01](evidencias/T01_A02_revisao.md). Não foram alterados scripts, cenas, assets ou configurações do jogo. Tempo de geração/edição pela IA não medido. Não foi feito commit nem envio ao GitHub; o hash integrado será registrado após o commit humano.
+A revisão atual está vinculada a P03, D02 e [T01](evidencias/T01_A02_revisao.md). Não foram alterados scripts, cenas, assets ou configurações do jogo. Tempo de geração/edição pela IA não medido. Versão humana integrada: `f1453934c0be612ae8f5c70515820624d15478bd`, conferida no Git em 22/10/2026; nenhum commit ou envio automático foi realizado nesta atualização de referência.

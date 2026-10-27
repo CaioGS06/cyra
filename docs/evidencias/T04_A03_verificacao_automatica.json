@@ -1,0 +1,40 @@
+{
+  "scope": "T04: verificação técnica automática; sem benchmark gráfico ou execução de Lucas",
+  "date": "2026-10-27",
+  "checks_passed": 24,
+  "checks": [
+    "registro_session_start",
+    "registro_session_end",
+    "registro_sample",
+    "registro_A01_scene_ready",
+    "registro_A01_landing",
+    "registro_A01_input_first",
+    "registro_A01_jump",
+    "registro_A01_ui_signal",
+    "registro_A01_trigger",
+    "registro_human_step_marker",
+    "registro_engine_error",
+    "timestamps_monotonicos",
+    "aviso_e_erro_nativos",
+    "modo_comum_sem_pasta",
+    "arquivo_bloqueador_preservado",
+    "pipeline_release_concluido",
+    "headless_nao_e_benchmark",
+    "release_identificado",
+    "ram_auto_disponivel",
+    "pacote_e_id_consistentes",
+    "linha_incompleta_sem_falso_sucesso",
+    "relato_nao_sobrescrito",
+    "d03_zip_intacto",
+    "d03_manifesto_corresponde_ao_original"
+  ],
+  "pipeline_run": "build/a03-test/TestResults/20261027T172607992Z-1c1b153f",
+  "expected_injected_errors": [
+    "T04_expected_warning",
+    "T04_expected_error"
+  ],
+  "manual_pending": [
+    "Iniciador gráfico, F9 e pasta por Lucas/desenvolvedor",
+    "Integração de eventos A05–A07 e piloto da demo"
+  ]
+}

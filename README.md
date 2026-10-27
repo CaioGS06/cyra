@@ -2,7 +2,7 @@
 
 Estudo de caso acadêmico de desenvolvimento de um jogo 2D com Godot .NET/C# e curadoria humana obrigatória. O escopo planejado contém três seções curtas, combate/vida, mimetismo de dois inimigos e duas habilidades, dois bloqueios e um save local único.
 
-**Esta entrega implementa somente a A01:** ambiente, estrutura de pastas e cena de validação. O movimento do ator de teste não constitui a implementação de RF01/A05. As pastas das próximas atividades estão vazias.
+**Implementado:** ambiente e cena A01, documentação A02 e suporte optativo de logs A03. O ator de teste não constitui a implementação final de RF01/A05. Combate, vida, habilidades, mapa e save ainda não foram implementados.
 
 Código, cena de teste e documentação tiveram assistência de IA (Codex). Arte, animação, som e narrativa finais deverão ser integralmente humanos. Nenhum asset artístico foi gerado; os visuais atuais são exclusivamente nós `ColorRect` e `Label` do Godot.
 
@@ -86,7 +86,8 @@ Procedimento baseado na documentação oficial de [C# no Godot](https://docs.god
 |---|---|
 | `Scenes/Test`, `Scripts/Test` | Cena e dois scripts exclusivos da A01 |
 | `Scenes/Sections`, `Scenes/Entities`, `Scenes/UI` | Reservas para cenas futuras |
-| `Scripts/Core`, `Scripts/Player`, `Scripts/Enemies`, `Scripts/Save` | Reservas para módulos futuros |
+| `Scripts/Core` | Coletor local optativo A03 |
+| `Scripts/Player`, `Scripts/Enemies`, `Scripts/Save` | Reservas para módulos futuros |
 | `Assets/Sprites`, `Assets/Audio`, `Assets/TileSets` | Exclusivas para recursos humanos futuros |
 | `docs` | Documentação, prompts, saída original e evidências; ignorada pelo importador Godot |
 
@@ -96,8 +97,17 @@ O Git ignora caches, exportações e temporários, preservando `.uid` e metadado
 
 - [Diário principal: D01, T00 e matriz A08](docs/Diario_Experimento_Cyra.md)
 - [A02 — escopo, requisitos e modelos: revisão documental aprovada com ajustes](docs/A02_Escopo_Requisitos_Modelos.md)
+- [A03 — protocolo simplificado, revisão documental concluída com ajustes](docs/A03_Protocolo_Avaliacao_Curadoria.md)
 - [Prompt P01 e roteiro original preservado](docs/Prompts_Utilizados.md)
 - [Tabela metodológica inicial](docs/Diario_Experimento_IA.md)
 - [Saída original preservada](docs/saidas_originais/D01_A01.zip), antes de revisão humana
 
 A saída original está preservada no commit `9cdfcc4` e no arquivo ZIP indicado acima. A versão integrada da A01 está em `6bf3e2d`, e a aprovação de Lucas está registrada em `46d5986`. Os detalhes da curadoria e das evidências ficam no diário principal.
+
+## Testes com coleta local automática — A03
+
+O modo comum não grava sessões do coletor. Para testar com logs, use o pacote completo e `Executar_Teste.cmd`, conforme [guia de Lucas](docs/Guia_Lucas_Testes.md). Iniciador/analisador em `tools/Testing`; copiar os três arquivos e o guia ao lado do executável. A exportação separada atual está em `build/a03-test`, fora do Git; para compartilhar, enviar o pacote completo ou exportar novamente e copiar as ferramentas.
+
+Lucas é a referência principal; Caio/Victor são complementares potenciais. Logs e resumo ficam em `TestResults/<sessão>`. Lucas usa F9 para marcar etapas e responde apenas o relato curto; IA auxilia análise/documentação sob curadoria. O resumo não aprova testes automaticamente. Caio confirmou revisão de código sem alterações e validação gráfica das seis etapas/F9; logs conferidos em [T04](docs/evidencias/T04_A03_coletor.md), com [evidência humana](docs/evidencias/T04_A03_validacao_humana_Caio.md). Piloto da demo na máquina de Lucas permanece futuro.
+
+Os eventos atuais são da A01. A05–A07 integrarão vida/combate/habilidades/mapa/save quando implementados. Não há benchmark final ou teste de Lucas coletado nesta entrega.

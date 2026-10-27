@@ -33,3 +33,6 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # Preservar fontes humanas, .uid e .import: fazem parte dos recursos versionados.
+
+# Evidências brutas de execução: compartilhar sessão escolhida, sem versionar em massa.
+TestResults/

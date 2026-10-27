@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-27",
+  "scope": "D05/T04, ensaio técnico automático, sem validação gráfica humana",
+  "checks": [
+    "destino padrão corrigido abriu build/a03-test com coletor",
+    "PowerShell do CMD recebeu seleção 2 e registrou Caio",
+    "session.jsonl completo e amostras presentes",
+    "telemetria ausente explicitamente indisponível no analisador"
+  ],
+  "run": "build/a03-test/TestResults/20261027T191051613Z-d614559d",
+  "human_pending": [
+    "repetir seis etapas/F9 no pacote atualizado",
+    "relatar revisão humana do código; tempo não medido se desconhecido"
+  ]
+}

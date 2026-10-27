@@ -1,0 +1,22 @@
+{
+    "schema":  1,
+    "protocol":  "A03-v2",
+    "machine_label":  "Lucas",
+    "scenario":  "A01",
+    "package_id":  "5ddd3da995a42ba3f9ba5f4e2d91e1a5a79202c88b1f0caac4f2ddd58a9f4b6d",
+    "exit_code":  0,
+    "collector_complete":  false,
+    "invalid_json_lines":  0,
+    "dropped_records":  0,
+    "headless":  null,
+    "performance_assessment":  "descriptive_only_requires_review",
+    "sample_count":  0,
+    "fps_median":  null,
+    "fps_sample_min":  null,
+    "private_memory":  null,
+    "engine_errors":  0,
+    "engine_warnings":  0,
+    "human_markers":  0,
+    "automatic_test_verdict":  "not_assigned",
+    "limitations":  "FPS agregado, memória do processo e eventos instrumentados. Ausência de erro não comprova aprovação funcional; dados do editor/headless não são benchmark release; sem prova de ausência de vazamento."
+}

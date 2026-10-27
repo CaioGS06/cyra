@@ -1,0 +1,28 @@
+{
+    "schema":  1,
+    "protocol":  "A03-v2",
+    "machine_label":  "Caio",
+    "scenario":  "A01",
+    "package_id":  "172238021bea85cd8e57dbc0ba8a998153c6f7e972926c4f2e52e31eef84fb1c",
+    "exit_code":  0,
+    "collector_complete":  true,
+    "invalid_json_lines":  0,
+    "dropped_records":  0,
+    "headless":  false,
+    "performance_assessment":  "descriptive_only_requires_review",
+    "sample_count":  68,
+    "fps_median":  60,
+    "fps_sample_min":  27,
+    "private_memory":  {
+                           "samples":  68,
+                           "first_bytes":  172138496,
+                           "last_bytes":  177422336,
+                           "max_bytes":  177422336,
+                           "delta_bytes":  5283840
+                       },
+    "engine_errors":  0,
+    "engine_warnings":  0,
+    "human_markers":  6,
+    "automatic_test_verdict":  "not_assigned",
+    "limitations":  "FPS agregado, memória do processo e eventos instrumentados. Ausência de erro não comprova aprovação funcional; dados do editor/headless não são benchmark release; sem prova de ausência de vazamento."
+}

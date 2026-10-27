@@ -56,4 +56,4 @@ Caio respondeu às três confirmações adicionais em nome da revisão informada
 
 ## 5. Versão e preservação
 
-Base anterior: `f8a2f06`. A revisão de trabalho será identificada pelo commit feito pelo usuário. O hash do próprio commit ainda não existe e não é preenchido antecipadamente. P02/D02 originais e manifestos permanecem preservados; P03 documenta as decisões posteriores.
+Base anterior: `f8a2f06`. Versão humana integrada: `f1453934c0be612ae8f5c70515820624d15478bd`, conferida no histórico Git em 22/10/2026 durante a preparação da A03. P02/D02 originais e manifestos permanecem preservados; P03 documenta as decisões posteriores. Esta atualização registra somente a referência de versão, sem alterar os resultados, participantes ou tempos da revisão.

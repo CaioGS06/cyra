@@ -1,11 +1,12 @@
 // ============================================================================
 // PROJETO CYRA — Estudo de Caso de Desenvolvimento Assistido por IA
-// Atividade / Requisito: A01 — ciclo de vida e sinais nativos/personalizado
+// Atividade / Requisito: A01 — ciclo de vida/sinais; A03 — eventos optativos de teste
 // Descrição do Módulo: conectar UI e gatilho, exibindo evidências da validação.
 // Entradas / Sinais Emitidos: BodyEntered, Pressed; TesteConcluido(string).
 // Pontos de Curadoria Humana (Checklist no Editor): referências, sinais e texto.
 // ============================================================================
 using Godot;
+using Cyra.Core;
 
 namespace Cyra.Test;
 
@@ -35,6 +36,7 @@ public partial class TestSceneController : Node2D
 		TesteConcluido += OnTesteConcluido;
 		_mainLabel.Text = "Cyra em teste";
 		GD.Print("A01: controlador pronto; sinais conectados por C#.");
+		TestRunRecorder.RecordEvent("A01_scene_ready");
 	}
 
 	public override void _PhysicsProcess(double delta)
@@ -55,11 +57,15 @@ public partial class TestSceneController : Node2D
 	private void OnTriggerBodyEntered(Node2D body)
 	{
 		if (body == _actor)
+		{
+			TestRunRecorder.RecordEvent("A01_trigger");
 			EmitSignal(SignalName.TesteConcluido, "Área de gatilho acionada");
+		}
 	}
 
 	private void OnTestButtonPressed()
 	{
+		TestRunRecorder.RecordEvent("A01_ui_signal");
 		EmitSignal(SignalName.TesteConcluido, "Botão acionado");
 	}
 

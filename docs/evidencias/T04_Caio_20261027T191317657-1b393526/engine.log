@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 560.94 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce GTX 750
+
+A03: teste ativo; F9 marca a próxima etapa. Logs: C:\Users\caio\GIT\cyra\build\a03-test\TestResults\20261027T191317657Z-1b393526
+A01: script do ator anexado; _Ready executado.
+A01: controlador pronto; sinais conectados por C#.
+A01: TesteConcluido recebido: Botão acionado.
+A01: TesteConcluido recebido: Área de gatilho acionada.
+A01: TesteConcluido recebido: Área de gatilho acionada.
+A01: TesteConcluido recebido: Área de gatilho acionada.
+A01: TesteConcluido recebido: Área de gatilho acionada.
+A01: TesteConcluido recebido: Botão acionado.
