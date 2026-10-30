@@ -26,3 +26,5 @@ Houve **quatro perdas e quatro retomadas de foco**. O resumo bruto registra FPS 
 **Resultado T04 no escopo entregue:** aprovado para o suporte de coleta A03/A01, combinando verificações técnicas automáticas anteriores, conferência dos logs, execução gráfica e revisão de código confirmadas por Caio. A leitura humana sem alterações não é falta de curadoria. O erro anterior do iniciador permanece no histórico D05/P07 e não foi ocultado.
 
 Permanecem como trabalhos futuros, sem bloquear o commit desta entrega: eventos das mecânicas A05–A07, piloto na máquina principal de Lucas e medições da demo nas condições então registradas. Não foram declarados testes de Lucas/Victor nem resultados de funcionalidades ainda ausentes.
+
+**Atualização posterior — P09, 30/10/2026:** Lucas enviou execução A01/coleta, com análise e aceitação humana de Caio com ressalvas em [registro próprio](T04_A03_validacao_Lucas.md). A referência acima a Lucas como futuro descreve o estado em P08; agora há coleta em sua máquina. O piloto da demo com mecânicas futuras continua não executado. A03 integrada em `e0aaeed`.

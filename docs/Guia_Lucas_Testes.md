@@ -1,6 +1,6 @@
 # Guia curto de testes — Lucas
 
-Versão A03-v2, 27/10/2026. Referência: Lucas/Ryzen 7 8700G/Radeon 780M/32 GB/Windows 11. O guia reduz anotações; o executor ainda confere o que vê e sente ao jogar.
+Versão A03-v2; guia atualizado em 30/10/2026, sem alteração dos critérios. Referência: Lucas/Ryzen 7 8700G/Radeon 780M/32 GB/Windows 11. O guia reduz anotações; o executor ainda confere o que vê e sente ao jogar.
 
 ## 1. Preparação pelo desenvolvedor/IA
 
@@ -14,7 +14,7 @@ O modo de teste não apaga nem edita saves. Para partida nova, arquivo inválido
 
 ## 2. O que Lucas faz
 
-1. Abra `Executar_Teste.cmd` e escolha o computador (neste PC, 2 para Caio). Da pasta tools/Testing, o padrão abre `build/a03-test/Cyra.exe`; junto de um pacote, abre o Cyra.exe ao lado. Se aparecer erro/jogo não abrir, informe a mensagem ao responsável; não precisa configurar ferramentas de desempenho.
+1. Abra `Executar_Teste.cmd` e escolha o computador (1 para Lucas, 2 para Caio ou 3 para Victor). Da pasta tools/Testing, o padrão abre `build/a03-test/Cyra.exe`; junto de um pacote, abre o Cyra.exe ao lado. Se aparecer erro/jogo não abrir, informe a mensagem ao responsável; não precisa configurar ferramentas de desempenho.
 2. Siga somente o roteiro disponível. Após cada etapa numerada, pressione **F9 uma vez** com o jogo em primeiro plano. F9 marca o momento/etapa, não aprovação. Informe no relato se esquecer uma marca.
 3. Feche o jogo normalmente ao terminar. Se travar/precisar encerrar à força, relate isso; o log parcial ainda pode ajudar.
 4. Abra `TestResults/<sessão>/relato.txt`, no local indicado pelo iniciador. Responda: concluiu? algo diferente do esperado? houve interrupção externa? Se nada percebeu, escreva isso.

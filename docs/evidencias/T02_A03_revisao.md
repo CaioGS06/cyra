@@ -32,6 +32,7 @@ A resposta aos pontos 2–8 não foi descrita como execução da antiga simulaç
 - [x] Registrar 41 min, participantes e autoria da decisão/edição assistida.
 - [x] Preparar guia/suporte de coleta com verificações técnicas em D04/T04.
 - [x] Caio validou graficamente as seis etapas/F9 e revisou o código sem alterações em P08/T04. Essa validação posterior não foi somada à reunião de 41 min; tempo da revisão não medido.
+- [x] Registrar execução A01/coleta em Lucas, analisada em 30/10/P09; relato positivo aceito por Caio com ressalvas (cinco F9 e pulo sem evento). [Evidência](T04_A03_validacao_Lucas.md). Não faz parte dos 41 min da reunião.
 - [ ] Integrar eventos em A05–A07 e realizar piloto na máquina de Lucas quando a demo existir.
 
 **Situação T02:** aprovado documentalmente com ajustes da revisão relatada; coletor e testes futuros têm validações próprias. Commit integrado ainda não criado pelo usuário; nenhum commit/envio automático.

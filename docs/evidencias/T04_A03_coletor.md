@@ -35,7 +35,7 @@ As assinaturas dos callbacks Logger foram conferidas no SDK local. A primeira co
 - [x] Caio repetiu graficamente as seis etapas/F9; sessão e logs conferidos em 27/10/2026, com identificação/manifesto de evidências.
 - [ ] Fazer piloto de integração/overhead e configuração na máquina de Lucas quando as mecânicas de A05–A07 existirem; conectar eventos reais dessas atividades.
 
-**Situação atual:** T04 aprovado no escopo do suporte entregue, com verificação automática e validação/revisão humana de Caio em P08. A03/T02 registra a revisão metodológica distinta. Piloto da demo em Lucas é trabalho futuro. Nenhum benchmark final ou teste de Lucas foi inventado; nenhum commit/envio automático.
+**Situação atual:** T04 aprovado no escopo do suporte entregue, com verificação automática e validação/revisão humana de Caio em P08. A03/T02 registra a revisão metodológica distinta. Lucas executou A01/coleta em 30/10, analisada em P09 e aceita por Caio com ressalvas; ver complemento abaixo. Piloto da demo em Lucas é trabalho futuro. Nenhum benchmark final foi declarado; nenhum commit/envio automático.
 
 ## Verificação gráfica relatada e achado posterior — P07
 
@@ -46,3 +46,9 @@ O reteste automático do novo padrão produziu telemetria completa. Na etapa P07
 ## Encerramento humano — P08
 
 [Validação humana de Caio](T04_A03_validacao_humana_Caio.md): seis etapas/F9 funcionando, código revisado sem alterações e tempo humano não medido. Logs gráficos release: perfil Caio, seis marcadores, 68 amostras, zero erros/avisos/descartes e encerramento normal. Quatro mudanças de foco são preservadas como limitação; não é benchmark da demo. Originais e ensaios anteriores mantidos. T04 liberado para integração por commit humano no escopo desta entrega.
+
+## Complemento de execução — Lucas/P09, 30/10/2026
+
+[Análise de Lucas](T04_A03_validacao_Lucas.md): 188 arquivos do jogo conferem com o pacote de P08; 124 amostras, coleta completa e encerramento normal, zero erros/avisos/descartes. Relato humano positivo; cinco marcas F9 e ausência de evento de pulo limitam a cobertura. **Caio aceitou prosseguir sem nova execução**, preservando as lacunas. T04 mantém aprovação do suporte e registra aceitação humana com ressalvas da execução de Lucas; não declara pulo comprovado nem revisão de código por Lucas.
+
+Iniciadores/guia recebidos são idênticos ao D04 original, anteriores à correção D05: esta sessão não valida as mudanças do iniciador corrigido, já verificadas em Caio. Erro inicial de script foi corrigido segundo Lucas, sem mensagem/procedimento informado. Dados de desempenho são descritivos, com quatro perdas/retomadas de foco. A03 já integrada em `e0aaeed`; documentação P09 pronta para novo commit humano.

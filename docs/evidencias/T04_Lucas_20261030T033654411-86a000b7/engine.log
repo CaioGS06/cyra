@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 Core Profile Context 25.10.30.02.250923 - Compatibility - Using Device: ATI Technologies Inc. - Radeon 7
+
+A03: teste ativo; F9 marca a próxima etapa. Logs: D:\Downloads\Cyra_A03_Teste\TestResults\20261030T033654411Z-86a000b7
+A01: script do ator anexado; _Ready executado.
+A01: controlador pronto; sinais conectados por C#.
+A01: TesteConcluido recebido: Botão acionado.
+A01: TesteConcluido recebido: Área de gatilho acionada.
+A01: TesteConcluido recebido: Área de gatilho acionada.
+A01: TesteConcluido recebido: Botão acionado.

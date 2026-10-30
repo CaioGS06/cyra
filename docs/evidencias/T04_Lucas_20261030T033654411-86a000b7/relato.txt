@@ -1,0 +1,10 @@
+Relato curto de Lucas (ou executor):
+1. Conseguiu concluir o roteiro? Se não, até qual etapa?
+R: Consegui
+2. Algo visual/de controle diferente do esperado? Etapa/F9 e descrição, ou "nada percebido".
+R: Não foi percebido nada fora do comum
+3. Houve interrupção externa, mudança de foco ou erro ao iniciar? Descreva, se houve.
+R: Foi encontrado um erro de execução de script por parte da minha máquina, mas foi corrigido.
+
+Não é necessário transcrever FPS/memória nem preencher tabelas manualmente.
+Os dados não medem tempo de revisão/correção fora do jogo.

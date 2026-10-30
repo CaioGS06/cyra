@@ -18,3 +18,5 @@ Encaminhamento na fase P07: repetir as seis etapas/F9 e confirmar revisão de c�
 Reteste adicional: Windows PowerShell do CMD com escolha 2, execução sem janela em build/a03-test/TestResults/20261027T191051613Z-d614559d; perfil Caio e coleta completa. Analisador em cópia sem telemetria retornou unavailable_missing_telemetry. [Registro do reteste](T04_A03_reteste_D05.json).
 
 **Encerramento:** [P08 — validação humana de Caio](T04_A03_validacao_humana_Caio.md) conclui revisão/execução do coletor corrigido, preservando as duas tentativas iniciais sem telemetria.
+
+**Complemento P09, 30/10/2026:** a pasta recebida de Lucas contém os três iniciadores/analisador originais D04 e o guia D04, conferidos byte a byte contra o ZIP preservado. Jogo idêntico ao de P08, coleta completa, pois o executável atualizado estava ao lado do iniciador. Essa execução não valida a escolha de perfil/fallback corrigidos D05; Lucas é identificado também pelo relato e envio informado por Caio. Não substituir fontes atuais pelas cópias recebidas. [Análise com aceitação humana e limites](T04_A03_validacao_Lucas.md).
