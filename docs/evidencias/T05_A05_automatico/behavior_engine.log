@@ -1,0 +1,60 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+A03: teste ativo; F9 marca a próxima etapa. Logs: C:/Users/caio/GIT/cyra/.godot/a05/final-session
+PASS: vida inicial real 5/3
+PASS: UI inicializa com o componente real
+PASS: alterar máximo não cura e atualiza a UI
+PASS: ator pousa no ponto seguro
+PASS: Input Map: player_left / 65
+PASS: Input Map: player_left / 4194319
+PASS: Input Map: player_right / 68
+PASS: Input Map: player_right / 4194321
+PASS: Input Map: player_jump / 32
+PASS: Input Map: player_attack / 74
+PASS: Input Map: player_restart / 82
+PASS: F9 não é ataque
+PASS: gravidade e piso sem atravessamento
+PASS: movimento à direita
+PASS: movimento à esquerda
+PASS: parede direita bloqueia o jogador
+PASS: parede esquerda bloqueia o jogador
+PASS: pulo permitido no piso
+PASS: novo comando no ar não concede salto extra
+PASS: pulo retorna ao piso
+PASS: RayCast2D faz o inimigo retornar antes da borda
+PASS: colisão nativa faz a patrulha inverter na parede
+PASS: ataque fora de alcance não causa dano
+PASS: mesmo alvo recebe só um dano por ataque; segurar não repete
+PASS: novo ataque após intervalo causa novo dano
+PASS: comando antes do intervalo não cria ataque adicional
+PASS: alvo atrás da direção capturada não é atingido
+PASS: ataque à esquerda atordoa a zero
+PASS: UI do inimigo acompanha o sinal de vida
+PASS: atordoamento sem recuperação por tempo
+PASS: atordoado permanece identificável em posição estável
+PASS: contato com atordoado não causa dano
+PASS: ataque extra no atordoado é ignorado
+PASS: dano nulo/negativo rejeitado
+PASS: vida limitada sem overflow e Depleted emitido uma vez
+PASS: máximo inválido é limitado sem ressuscitar
+PASS: reinício manual troca somente a sala
+PASS: contato aplica o primeiro dano
+PASS: sobreposição não multiplica dano por quadro
+PASS: UI do jogador segue dano por sinal
+PASS: dano volta após intervalo de proteção
+PASS: morte por contato reinicia a sala: ciclo 1
+PASS: retorno seguro com vida máxima: ciclo 1
+PASS: inimigo reiniciado: ciclo 1
+PASS: sem nós extras e mesmo autoload: ciclo 1
+PASS: morte por contato reinicia a sala: ciclo 2
+PASS: retorno seguro com vida máxima: ciclo 2
+PASS: inimigo reiniciado: ciclo 2
+PASS: sem nós extras e mesmo autoload: ciclo 2
+PASS: morte por contato reinicia a sala: ciclo 3
+PASS: retorno seguro com vida máxima: ciclo 3
+PASS: inimigo reiniciado: ciclo 3
+PASS: sem nós extras e mesmo autoload: ciclo 3
+PASS: ataque tem janela ativa
+PASS: morte interrompe janela e visual de ataque
+PASS: jogador morto não recebe novo dano
+A05_BEHAVIOR_RESULT: 56 passed, 0 failed

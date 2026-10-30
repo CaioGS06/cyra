@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+WARNING: A03: não foi possível gravar os logs de teste (IOException).
+   at: void Cyra.Core.TestRunRecorder.Disable(System.Exception) (res://Scripts/Core/TestRunRecorder.cs:220)
+   C# backtrace (most recent call first):
+       [0] void Godot.GD.PushWarning(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:396)
+       [1] void Cyra.Core.TestRunRecorder.Disable(System.Exception) (C:\Users\caio\GIT\cyra\Scripts\Core\TestRunRecorder.cs:220)
+       [2] void Cyra.Core.TestRunRecorder._Ready() (C:\Users\caio\GIT\cyra\Scripts\Core\TestRunRecorder.cs:50)
+       [3] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [4] bool Cyra.Core.TestRunRecorder.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (C:\Users\caio\GIT\cyra\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Cyra.Core.TestRunRecorder_ScriptMethods.generated.cs:100)
+       [5] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)

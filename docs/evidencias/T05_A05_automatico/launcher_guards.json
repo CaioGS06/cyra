@@ -1,0 +1,12 @@
+[
+  {
+    "check": "scenario_mismatch_rejected",
+    "rejected": true,
+    "message": "Cenario solicitado difere do pacote: A01 / A05"
+  },
+  {
+    "check": "A05_descriptor_required",
+    "rejected": true,
+    "message": "Pacote A05 sem test-package.json. Use a exportacao A05 preparada; nao rotule um pacote A01 como A05."
+  }
+]

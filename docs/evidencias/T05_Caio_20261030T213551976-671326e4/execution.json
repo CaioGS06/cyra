@@ -1,0 +1,11 @@
+{
+    "schema":  1,
+    "machine_label":  "Caio",
+    "scenario":  "A05",
+    "protocol":  "A03-v2",
+    "package_id":  "5d244af2a99b595feb8e92d8390923839ecd4a1483c2acfdd3cd4b941e8112b5",
+    "started_utc":  "2026-10-30T21:35:53.1542187Z",
+    "ended_utc":  "2026-10-30T21:38:57.9642310Z",
+    "status":  "process_exited",
+    "exit_code":  0
+}

@@ -1,0 +1,37 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Inicialização do Projeto (5 steps)
+[   0% ] first_scan_filesystem | Escaneando estrutura de arquivos...
+[  16% ] first_scan_filesystem | Carregando nomes de classe globais...
+[  33% ] first_scan_filesystem | Verificando GDExtensions...
+[  50% ] first_scan_filesystem | Criando scripts autoload...
+[  66% ] first_scan_filesystem | Inicializando plugins...
+[  83% ] first_scan_filesystem | Iniciando escaneamento de arquivos...
+[ DONE ] first_scan_filesystem
+
+[   0% ] dotnet_publish_project | Started Publishing .NET project... (1 steps)
+[   0% ] dotnet_publish_project | Running dotnet publish
+[ DONE ] dotnet_publish_project
+
+[   0% ] savepack | Started Empacotando (102 steps)
+[   1% ] savepack | Armazenando Arquivo: res://.godot/exported/133200997/export-894d169b1199545b76fa5cce2750d0a0-TestSceneA01.scn
+[   9% ] savepack | Armazenando Arquivo: res://Scripts/Test/TestSceneController.cs
+[  17% ] savepack | Armazenando Arquivo: res://Scripts/Test/TestActor.cs
+[  26% ] savepack | Armazenando Arquivo: res://.godot/exported/133200997/export-10fde548af9cd387520e35b58c9a5d05-TestRoomA05.scn
+[  33% ] savepack | Armazenando Arquivo: res://Scripts/Test/A05RoomController.cs
+[  41% ] savepack | Armazenando Arquivo: res://.godot/exported/133200997/export-97bbde590caea1a8584ef632c6d1cc2e-Player.scn
+[  50% ] savepack | Armazenando Arquivo: res://Scripts/Player/PlayerController.cs
+[  58% ] savepack | Armazenando Arquivo: res://Scripts/Core/Health.cs
+[  66% ] savepack | Armazenando Arquivo: res://.godot/exported/133200997/export-70516558e1d8b8a32dc6bf4c32a311cf-BasicEnemy.scn
+[  74% ] savepack | Armazenando Arquivo: res://Scripts/Enemies/BasicEnemy.cs
+[  82% ] savepack | Armazenando Arquivo: res://Scripts/Test/HealthIndicator.cs
+[  90% ] savepack | Armazenando Arquivo: res://Scripts/Core/TestRunRecorder.cs
+[  90% ] savepack | Armazenando Arquivo: res://Scenes/Test/TestSceneA01.tscn.remap
+[  90% ] savepack | Armazenando Arquivo: res://Scenes/Test/TestRoomA05.tscn.remap
+[  90% ] savepack | Armazenando Arquivo: res://Scenes/Entities/Player.tscn.remap
+[  90% ] savepack | Armazenando Arquivo: res://Scenes/Entities/BasicEnemy.tscn.remap
+[  90% ] savepack | Armazenando Arquivo: res://.godot/global_script_class_cache.cfg
+[  90% ] savepack | Armazenando Arquivo: res://.godot/uid_cache.bin
+[  90% ] savepack | Armazenando Arquivo: res://project.binary
+[ DONE ] savepack
+

@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Player/PlayerController.cs" id="1"]
+[ext_resource type="Script" path="res://Scripts/Core/Health.cs" id="2"]
+
+[sub_resource type="RectangleShape2D" id="BodyShape"]
+size = Vector2(32, 48)
+
+[sub_resource type="RectangleShape2D" id="AttackShape"]
+size = Vector2(48, 44)
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("BodyShape")
+
+[node name="Visual" type="ColorRect" parent="."]
+offset_left = -16.0
+offset_top = -24.0
+offset_right = 16.0
+offset_bottom = 24.0
+mouse_filter = 2
+color = Color(0.3, 0.7, 0.95, 1)
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("2")
+Maximum = 5
+EntityId = "player"
+
+[node name="AttackArea" type="Area2D" parent="."]
+position = Vector2(40, 0)
+collision_layer = 0
+collision_mask = 4
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+shape = SubResource("AttackShape")
+
+[node name="Visual" type="ColorRect" parent="AttackArea"]
+visible = false
+offset_left = -24.0
+offset_top = -22.0
+offset_right = 24.0
+offset_bottom = 22.0
+mouse_filter = 2
+color = Color(1, 0.9, 0.3, 0.5)

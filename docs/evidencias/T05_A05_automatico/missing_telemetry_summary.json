@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "protocol": "A03-v2",
+  "machine_label": "Fixture",
+  "scenario": "A05",
+  "package_id": "fixture-no-telemetry",
+  "exit_code": 0,
+  "collector_complete": false,
+  "invalid_json_lines": 0,
+  "dropped_records": 0,
+  "headless": null,
+  "performance_assessment": "unavailable_missing_telemetry",
+  "sample_count": 0,
+  "fps_median": null,
+  "fps_sample_min": null,
+  "private_memory": null,
+  "engine_errors": 0,
+  "engine_warnings": 0,
+  "human_markers": 0,
+  "game_event_counts": {},
+  "automatic_test_verdict": "not_assigned",
+  "limitations": "FPS agregado, memória do processo e eventos instrumentados. Ausência de erro não comprova aprovação funcional; dados do editor/headless não são benchmark release; sem prova de ausência de vazamento."
+}

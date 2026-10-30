@@ -1,0 +1,63 @@
+{
+  "prompt": "P12",
+  "date": "2026-10-30",
+  "test": "T05",
+  "executor": "Caio",
+  "session_id": "20261030T213554078Z-b07bc009",
+  "event_counts": {
+    "session_start": 1,
+    "engine_message": 1,
+    "A05_room_ready": 6,
+    "A05_landing": 14,
+    "sample": 181,
+    "focus_lost": 2,
+    "focus_gained": 2,
+    "human_step_marker": 10,
+    "A05_movement": 156,
+    "A05_jump": 8,
+    "A05_attack": 15,
+    "A05_health_changed": 20,
+    "A05_damage_applied": 20,
+    "A05_stunned": 2,
+    "A05_room_reset": 3,
+    "A05_damage_received": 14,
+    "A05_death": 2,
+    "A05_safe_return": 2,
+    "session_end": 1
+  },
+  "collector_elapsed_seconds": 183.7138792,
+  "summary_independently_checked": true,
+  "raw_package_files_checked": 193,
+  "package_id": "5d244af2a99b595feb8e92d8390923839ecd4a1483c2acfdd3cd4b941e8112b5",
+  "same_files_and_hashes_as_original_release": true,
+  "original_package_id": "faf55c4951e9ab859d8c13badebd21c7aeeeaa3001a797436f3e3274eac0e029",
+  "identity_difference": "Two runtime library paths swap order in the manifest; package ID hashes ordered entries. Contents unchanged.",
+  "marker_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "minimum_damage_interval_within_cycle_seconds": 0.7995331999999848,
+  "duplicate_attack_target_hits": 0,
+  "attack_directions": {
+    "1": 15
+  },
+  "human_report": "All 12 steps completed successfully; code reviewed without changes; provisional parameters accepted; 15 minutes reported for review, without breakdown.",
+  "marker_explanation": "Caio: Devo ter esquecido de algumas, mas fiz o teste de todas as etapas.",
+  "limitations": [
+    "10 recorded F9 markers for 12 reported steps; no one-to-one assignment reconstructed",
+    "All recorded attacks face right; supplemental left attack/right wall not confirmed by this session",
+    "Session duration is separate from reported 15-minute human review",
+    "No new screenshots supplied; visual outcome based on human report",
+    "Lucas A05 execution and cross-review not reported",
+    "Not a final performance benchmark"
+  ],
+  "workspace_configuration_difference": "project.godot InputEventKey entries expanded with additional properties including device=16; same physical_keycode list as D06. Pre-existing difference observed during P12, authorship not established; not modified by this update. Human session validates the archived release package."
+}

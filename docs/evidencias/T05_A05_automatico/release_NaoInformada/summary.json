@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "protocol": "A03-v2",
+  "machine_label": "NaoInformada",
+  "scenario": "A05",
+  "package_id": "faf55c4951e9ab859d8c13badebd21c7aeeeaa3001a797436f3e3274eac0e029",
+  "exit_code": 0,
+  "collector_complete": true,
+  "invalid_json_lines": 0,
+  "dropped_records": 0,
+  "headless": true,
+  "performance_assessment": "not_applicable_headless",
+  "sample_count": 2,
+  "fps_median": 53,
+  "fps_sample_min": 46,
+  "private_memory": {
+    "samples": 2,
+    "first_bytes": 59281408,
+    "last_bytes": 59113472,
+    "max_bytes": 59281408.0,
+    "delta_bytes": -167936
+  },
+  "engine_errors": 0,
+  "engine_warnings": 0,
+  "human_markers": 0,
+  "game_event_counts": {
+    "A05_landing": 1,
+    "A05_room_ready": 1
+  },
+  "automatic_test_verdict": "not_assigned",
+  "limitations": "FPS agregado, memória do processo e eventos instrumentados. Ausência de erro não comprova aprovação funcional; dados do editor/headless não são benchmark release; sem prova de ausência de vazamento."
+}

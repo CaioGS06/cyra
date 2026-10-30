@@ -1,6 +1,6 @@
 // ============================================================================
 // PROJETO CYRA — Estudo de Caso de Desenvolvimento Assistido por IA
-// Atividade / Requisito: A03 — coleta local para curadoria e avaliação (RNF01/RNF04)
+// Atividade / Requisito: A03/A05 — coleta local para curadoria (RNF01/RNF04)
 // Descrição do Módulo: registrar sessões optativas de teste, sem decidir aprovação.
 // Entradas / Sinais Emitidos: --cyra-test; F9 marca etapa; notificações de foco.
 // Pontos de Curadoria Humana: modo comum sem logs; modo teste, arquivos e falhas.
@@ -58,7 +58,7 @@ public partial class TestRunRecorder : Node
                 protocol = Option("--cyra-protocol=") ?? "A03-v2",
                 machine_label = Option("--cyra-machine=") ?? "nao_informada",
                 build_label = Option("--cyra-build=") ?? "nao_informada",
-                scenario = Option("--cyra-scenario=") ?? "A01",
+                scenario = Option("--cyra-scenario=") ?? "nao_informado",
                 engine = Engine.GetVersionInfo()["string"].AsString(),
                 os = OS.GetName(), os_version = OS.GetVersion(),
                 cpu = OS.GetProcessorName(), gpu = RenderingServer.GetVideoAdapterName(),
@@ -71,7 +71,13 @@ public partial class TestRunRecorder : Node
                 window_height = DisplayServer.WindowGetSize().Y,
                 vsync = DisplayServer.WindowGetVsyncMode().ToString(), max_fps = Engine.MaxFps,
                 sample_interval_seconds = 1, max_log_bytes = MaxBytes,
-                supported_game_events = new[] { "A01_scene_ready", "A01_input_first", "A01_landing", "A01_jump", "A01_ui_signal", "A01_trigger" }
+                supported_game_events = new[]
+                {
+                    "A01_scene_ready", "A01_input_first", "A01_landing", "A01_jump", "A01_ui_signal", "A01_trigger",
+                    "A05_room_ready", "A05_movement", "A05_jump", "A05_landing", "A05_attack",
+                    "A05_damage_applied", "A05_damage_received", "A05_health_changed", "A05_stunned",
+                    "A05_death", "A05_safe_return", "A05_room_reset"
+                }
             });
             _engineLogger = new TestEngineLogger { Owner = this };
             OS.AddLogger(_engineLogger);
@@ -88,7 +94,7 @@ public partial class TestRunRecorder : Node
     }
 
     // Eventos de domínio devem ser emitidos pelo módulo real, na thread principal.
-    // A05–A07 acrescentarão chamadas quando suas mecânicas existirem.
+    // A01 e A05 chamam esta entrada; A06/A07 não estão implementadas.
     public static void RecordEvent(string name, object? data = null) => _instance?.Enqueue(name, data);
 
     internal void Enqueue(string kind, object? data)

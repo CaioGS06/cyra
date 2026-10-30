@@ -135,7 +135,7 @@ O iniciador identifica os arquivos executáveis/dados do pacote por hash e cada 
 
 ### 5.2 Roteiro e repetições
 
-O roteiro do executor está em [Guia_Lucas_Testes.md](Guia_Lucas_Testes.md). Na situação atual só existe a cena A01: pode-se verificar movimento/sinais e o funcionamento dos logs, sem alegar teste de combate/vida/habilidades/save.
+O roteiro do executor está em [Guia_Lucas_Testes.md](Guia_Lucas_Testes.md). Na entrega original A03 existia somente a cena A01. **Atualização de cobertura em 30/10/2026, D06/A05:** sala própria com movimento/combate/vida e reinício, pendente de curadoria T05; A01 preservada. Habilidades/mapa/save continuam futuros. Isso não amplia retroativamente o que Lucas comprovou em P09.
 
 Quando as mecânicas existirem, realizar inicialmente um percurso das três seções, retorno e uma retomada após morte/reabertura; observar se a demo permite demonstrar os requisitos. Uma sessão curta, por exemplo 3–5 min, é ponto de partida, não prazo obrigatório nem tempo já gasto. Acrescentar uma repetição ou período contínuo somente para confirmar achado, ampliar evidência ou investigar um comportamento. Não exigir três séries longas antes de haver uma dúvida concreta.
 
@@ -152,7 +152,7 @@ Alterações na prioridade de desempenho não apagam RNF04: relatar o que foi ob
 ### 6.1 Funcionamento
 
 - `TestRunRecorder`, autoload em `Scripts/Core`, permanece inativo na execução comum. O modo `--cyra-test` habilita os registros; não altera vida, física, habilidades ou save.
-- `tools/Testing/Executar_Teste.cmd` inicia o pacote por PowerShell; `Executar_Teste.ps1` prepara pasta exclusiva em `TestResults`, identifica o pacote, inicia o jogo e chama `Analisar_Logs.ps1` ao terminar. O CMD pergunta o computador; execução direta sem perfil fica NaoInformada. Na pasta tools, o destino padrão é build/a03-test, sem fallback para a exportação antiga build/windows (correção D05/P07).
+- `tools/Testing/Executar_Teste.cmd` inicia o pacote por PowerShell; `Executar_Teste.ps1` prepara pasta exclusiva em `TestResults`, identifica o pacote, inicia o jogo e chama `Analisar_Logs.ps1` ao terminar. O CMD pergunta o computador; execução direta sem perfil fica NaoInformada. Atualização A05/D06: padrão `build/a05-test`; opção A01 usa `build/a03-test`, sem fallback para `build/windows`. Preservadas as proteções D05 de máquina explícita e coleta ausente; descritor A05 confere o cenário do pacote.
 - `session.jsonl`: início, relógio monotônico/UTC, configuração, amostras aproximadamente a cada segundo, foco, marcadores F9, mensagens/erros nativos capturados e eventos instrumentados. Não inventar amostras durante pausas.
 - Amostras: FPS agregado informado pela engine, Private Bytes e Working Set do processo. Cada contador mantém nome/unidade; memória física disponível não é consumo do jogo, memória do processo não é apenas heap C# nem VRAM.
 - `engine.log` é solicitado à engine pelo iniciador, complementando o logger, que só recebe mensagens após sua instalação. Fatalidades antes do início e encerramentos abruptos podem impedir rodapé; não prometer captura integral de qualquer falha.
@@ -160,9 +160,9 @@ Alterações na prioridade de desempenho não apagam RNF04: relatar o que foi ob
 
 ### 6.2 Eventos disponíveis e integrações futuras
 
-Hoje são emitidos eventos da cena existente: pronta, primeira entrada, salto, pouso, botão e gatilho. F9 registra número da etapa do roteiro, não aprovação dessa etapa.
+Continuam disponíveis os eventos A01: pronta, primeira entrada, salto, pouso, botão e gatilho. A05/D06 acrescenta eventos reais de sala pronta, mudança de movimento, salto/pouso, ataque, dano aplicado/recebido, vida anterior/atual, atordoamento, morte, retorno e reinício manual. F9 registra número da etapa do roteiro, não aprovação dessa etapa. Contagens em `summary.json` descrevem somente eventos presentes.
 
-A05–A07 deverão chamar `TestRunRecorder.RecordEvent` nos módulos reais quando forem implementados: dano/vida, atordoamento/absorção, mudança de habilidade, tentativa/superação de bloqueio, transição, morte e save/carga/falha. Registrar ID técnico e estado relevante, sem conteúdo artístico. A API aceita dados serializáveis simples, na thread principal; não registrar todo quadro nem objetos de nós/cenas. **Esses módulos e eventos não foram implementados antecipadamente nesta A03.** Sua ausência atual é cobertura indisponível, não resultado aprovado.
+A05 usa `TestRunRecorder.RecordEvent` em seus módulos reais, sem criar outro coletor. A06/A07 integrarão absorção, mudança de habilidade, bloqueios, seções e save/carga/falha quando existirem. A API aceita dados simples na thread principal, com ID técnico/valores; não serializar nós/cenas nem registrar movimento a cada quadro. Os módulos A05 não existiam na entrega original A03; a cobertura nova pertence a D06/T05, sem inventar resultados humanos.
 
 ### 6.3 Análise e critérios leves
 

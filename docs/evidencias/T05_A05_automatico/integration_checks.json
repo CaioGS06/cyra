@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "date": "2026-10-30",
+  "scenario": "A05",
+  "executor": "Codex — automação local na máquina de Caio",
+  "human_validation": "pending",
+  "benchmark": false,
+  "behavior_checks": 56,
+  "integration_checks_passed": 34,
+  "integration_checks_failed": 0,
+  "package_id": "faf55c4951e9ab859d8c13badebd21c7aeeeaa3001a797436f3e3274eac0e029",
+  "events": {
+    "session_start": 1,
+    "engine_message": 58,
+    "A05_room_ready": 6,
+    "A05_landing": 8,
+    "A05_health_changed": 23,
+    "sample": 25,
+    "A05_movement": 14,
+    "A05_jump": 1,
+    "A05_attack": 6,
+    "A05_damage_applied": 18,
+    "A05_stunned": 2,
+    "A05_room_reset": 1,
+    "A05_damage_received": 16,
+    "A05_death": 4,
+    "A05_safe_return": 4,
+    "human_step_marker": 1,
+    "session_end": 1
+  },
+  "checks": [
+    {
+      "passed": true,
+      "description": "uma sessão, cabeçalho e rodapé apesar dos reinícios"
+    },
+    {
+      "passed": true,
+      "description": "session_id preservado ao morrer"
+    },
+    {
+      "passed": true,
+      "description": "relógio monotônico sem reiniciar na morte"
+    },
+    {
+      "passed": true,
+      "description": "cenário A05 e condição sem janela identificados"
+    },
+    {
+      "passed": true,
+      "description": "quatro mortes/retornos únicos: três contatos e um dano letal de fixture"
+    },
+    {
+      "passed": true,
+      "description": "reinício manual distinto de morte"
+    },
+    {
+      "passed": true,
+      "description": "seis salas prontas sem callback duplicado: inicial, manual e quatro retornos"
+    },
+    {
+      "passed": true,
+      "description": "F9 simulado registrado uma vez, sem aprovação humana"
+    },
+    {
+      "passed": true,
+      "description": "amostras reais de coleta presentes"
+    },
+    {
+      "passed": true,
+      "description": "sessão final sem erro/aviso da engine ou limite de tamanho"
+    },
+    {
+      "passed": true,
+      "description": "sem registros descartados"
+    },
+    {
+      "passed": true,
+      "description": "eventos de vida respeitam limites reais"
+    },
+    {
+      "passed": true,
+      "description": "retornos registram vida máxima e inimigo restaurado"
+    },
+    {
+      "passed": true,
+      "description": "dano único por ataque/alvo na sala: (2, 'enemy_01')"
+    },
+    {
+      "passed": true,
+      "description": "dano único por ataque/alvo na sala: (3, 'enemy_01')"
+    },
+    {
+      "passed": true,
+      "description": "dano único por ataque/alvo na sala: (5, 'enemy_01')"
+    },
+    {
+      "passed": true,
+      "description": "dano aplicado registra diferença real, inclusive contato"
+    },
+    {
+      "passed": true,
+      "description": "modo comum sem pasta/sessão do coletor"
+    },
+    {
+      "passed": true,
+      "description": "falha de gravação sinalizada sem interromper execução"
+    },
+    {
+      "passed": true,
+      "description": "56 checagens de comportamento aprovadas"
+    },
+    {
+      "passed": true,
+      "description": "regressão A01: 14 checagens sem falha"
+    },
+    {
+      "passed": true,
+      "description": "release_Caio: pacote executa e coleta íntegra"
+    },
+    {
+      "passed": true,
+      "description": "release_Caio: identificação explícita ou não informada preservada"
+    },
+    {
+      "passed": true,
+      "description": "release_Caio: não declara benchmark/veredicto humano"
+    },
+    {
+      "passed": true,
+      "description": "release_Caio: sem erros, avisos, JSON inválido ou descartes"
+    },
+    {
+      "passed": true,
+      "description": "release_Caio: sala A05 realmente carregada"
+    },
+    {
+      "passed": true,
+      "description": "release_NaoInformada: pacote executa e coleta íntegra"
+    },
+    {
+      "passed": true,
+      "description": "release_NaoInformada: identificação explícita ou não informada preservada"
+    },
+    {
+      "passed": true,
+      "description": "release_NaoInformada: não declara benchmark/veredicto humano"
+    },
+    {
+      "passed": true,
+      "description": "release_NaoInformada: sem erros, avisos, JSON inválido ou descartes"
+    },
+    {
+      "passed": true,
+      "description": "release_NaoInformada: sala A05 realmente carregada"
+    },
+    {
+      "passed": true,
+      "description": "mesmo pacote nas execuções Caio/NaoInformada"
+    },
+    {
+      "passed": true,
+      "description": "D05: coleta ausente não vira resultado ou FPS fictício"
+    },
+    {
+      "passed": true,
+      "description": "cenário incorreto e A05 sem descritor rejeitados antes da execução"
+    }
+  ]
+}

@@ -40,6 +40,10 @@ $memory = $null
 if ($private.Count) {
     $memory = [ordered]@{ samples = $private.Count; first_bytes = $private[0]; last_bytes = $private[-1]; max_bytes = ($private | Measure-Object -Maximum).Maximum; delta_bytes = $private[-1] - $private[0] }
 }
+$gameEvents = [ordered]@{}
+foreach ($group in @($records | Where-Object { $_.kind -match '^(A01|A05)_' } | Group-Object kind)) {
+    $gameEvents[$group.Name] = $group.Count
+}
 Write-JsonFile 'summary.json' ([ordered]@{
     schema = 1; protocol = 'A03-v2'; machine_label = $Maquina; scenario = $Cenario; package_id = $packageId
     exit_code = $exitCode; collector_complete = $complete; invalid_json_lines = $invalidLines; dropped_records = $dropped
@@ -50,6 +54,7 @@ Write-JsonFile 'summary.json' ([ordered]@{
     engine_errors = @($records | Where-Object { $_.kind -eq 'engine_error' -and $_.data.error_type -ne 1 }).Count
     engine_warnings = @($records | Where-Object { $_.kind -eq 'engine_error' -and $_.data.error_type -eq 1 }).Count
     human_markers = @($records | Where-Object { $_.kind -eq 'human_step_marker' }).Count
+    game_event_counts = $gameEvents
     automatic_test_verdict = 'not_assigned'
     limitations = 'FPS agregado, memória do processo e eventos instrumentados. Ausência de erro não comprova aprovação funcional; dados do editor/headless não são benchmark release; sem prova de ausência de vazamento.'
 })

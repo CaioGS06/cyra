@@ -1,0 +1,224 @@
+{
+  "checks": [
+    {
+      "description": "vida inicial real 5/3",
+      "passed": true
+    },
+    {
+      "description": "UI inicializa com o componente real",
+      "passed": true
+    },
+    {
+      "description": "ator pousa no ponto seguro",
+      "passed": true
+    },
+    {
+      "description": "Input Map: player_left / 65",
+      "passed": true
+    },
+    {
+      "description": "Input Map: player_left / 4194319",
+      "passed": false
+    },
+    {
+      "description": "Input Map: player_right / 68",
+      "passed": true
+    },
+    {
+      "description": "Input Map: player_right / 4194321",
+      "passed": false
+    },
+    {
+      "description": "Input Map: player_jump / 32",
+      "passed": true
+    },
+    {
+      "description": "Input Map: player_attack / 74",
+      "passed": true
+    },
+    {
+      "description": "Input Map: player_restart / 82",
+      "passed": true
+    },
+    {
+      "description": "F9 não é ataque",
+      "passed": true
+    },
+    {
+      "description": "gravidade e piso sem atravessamento",
+      "passed": true
+    },
+    {
+      "description": "movimento à direita",
+      "passed": true
+    },
+    {
+      "description": "movimento à esquerda",
+      "passed": true
+    },
+    {
+      "description": "parede direita bloqueia o jogador",
+      "passed": false
+    },
+    {
+      "description": "parede esquerda bloqueia o jogador",
+      "passed": false
+    },
+    {
+      "description": "pulo permitido no piso",
+      "passed": true
+    },
+    {
+      "description": "novo comando no ar não concede salto extra",
+      "passed": true
+    },
+    {
+      "description": "pulo retorna ao piso",
+      "passed": true
+    },
+    {
+      "description": "ataque fora de alcance não causa dano",
+      "passed": true
+    },
+    {
+      "description": "mesmo alvo recebe só um dano por ataque; segurar não repete",
+      "passed": true
+    },
+    {
+      "description": "novo ataque após intervalo causa novo dano",
+      "passed": true
+    },
+    {
+      "description": "comando antes do intervalo não cria ataque adicional",
+      "passed": true
+    },
+    {
+      "description": "alvo atrás da direção capturada não é atingido",
+      "passed": true
+    },
+    {
+      "description": "ataque à esquerda atordoa a zero",
+      "passed": true
+    },
+    {
+      "description": "UI do inimigo acompanha o sinal de vida",
+      "passed": true
+    },
+    {
+      "description": "atordoamento sem recuperação por tempo",
+      "passed": true
+    },
+    {
+      "description": "atordoado permanece identificável em posição estável",
+      "passed": true
+    },
+    {
+      "description": "contato com atordoado não causa dano",
+      "passed": true
+    },
+    {
+      "description": "ataque extra no atordoado é ignorado",
+      "passed": true
+    },
+    {
+      "description": "dano nulo/negativo rejeitado",
+      "passed": true
+    },
+    {
+      "description": "vida limitada sem overflow e Depleted emitido uma vez",
+      "passed": true
+    },
+    {
+      "description": "máximo inválido é limitado sem ressuscitar",
+      "passed": true
+    },
+    {
+      "description": "reinício manual troca somente a sala",
+      "passed": false
+    },
+    {
+      "description": "contato aplica o primeiro dano",
+      "passed": false
+    },
+    {
+      "description": "sobreposição não multiplica dano por quadro",
+      "passed": false
+    },
+    {
+      "description": "UI do jogador segue dano por sinal",
+      "passed": false
+    },
+    {
+      "description": "dano volta após intervalo de proteção",
+      "passed": false
+    },
+    {
+      "description": "morte por contato reinicia a sala: ciclo 1",
+      "passed": false
+    },
+    {
+      "description": "retorno seguro com vida máxima: ciclo 1",
+      "passed": false
+    },
+    {
+      "description": "inimigo reiniciado: ciclo 1",
+      "passed": false
+    },
+    {
+      "description": "sem nós extras e mesmo autoload: ciclo 1",
+      "passed": true
+    },
+    {
+      "description": "morte por contato reinicia a sala: ciclo 2",
+      "passed": false
+    },
+    {
+      "description": "retorno seguro com vida máxima: ciclo 2",
+      "passed": false
+    },
+    {
+      "description": "inimigo reiniciado: ciclo 2",
+      "passed": false
+    },
+    {
+      "description": "sem nós extras e mesmo autoload: ciclo 2",
+      "passed": true
+    },
+    {
+      "description": "morte por contato reinicia a sala: ciclo 3",
+      "passed": false
+    },
+    {
+      "description": "retorno seguro com vida máxima: ciclo 3",
+      "passed": false
+    },
+    {
+      "description": "inimigo reiniciado: ciclo 3",
+      "passed": false
+    },
+    {
+      "description": "sem nós extras e mesmo autoload: ciclo 3",
+      "passed": true
+    },
+    {
+      "description": "ataque tem janela ativa",
+      "passed": true
+    },
+    {
+      "description": "morte interrompe janela e visual de ataque",
+      "passed": true
+    },
+    {
+      "description": "jogador morto não recebe novo dano",
+      "passed": true
+    }
+  ],
+  "failed": 18,
+  "fixture_placements": true,
+  "headless": true,
+  "human_validation": "pending",
+  "passed": 35,
+  "scenario": "A05",
+  "schema": 1,
+  "simulated_input": true
+}
