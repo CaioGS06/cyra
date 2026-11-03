@@ -1,0 +1,971 @@
+{
+    "schema":  1,
+    "package_id":  "5d244af2a99b595feb8e92d8390923839ecd4a1483c2acfdd3cd4b941e8112b5",
+    "files":  [
+                  {
+                      "path":  "Analisar_Logs.ps1",
+                      "sha256":  "144E7B5E697048A18F0B3949099093C8BCDD96C52642DF4CD948BF0CAB40E34E",
+                      "bytes":  4821
+                  },
+                  {
+                      "path":  "Cyra.exe",
+                      "sha256":  "16E0EC3CFD398B938F514DE95FF2474B532B5061ADA78F92226DBA3F7584D55D",
+                      "bytes":  109513728
+                  },
+                  {
+                      "path":  "Cyra.pck",
+                      "sha256":  "56C6896C0CAE480F8A3530F3079C8BE117206ED686660B20B76C4C5A69301503",
+                      "bytes":  17116
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/clretwrc.dll",
+                      "sha256":  "CBF4751A780CEF63FBAE56C3CAE61862958B471F69F1959CB3A609D2D3695CC5",
+                      "bytes":  310568
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/clrgc.dll",
+                      "sha256":  "52B2EDCD2D22C56E954CD589E112937DD950A0018878CF61CAEC1463AE404472",
+                      "bytes":  667984
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/clrjit.dll",
+                      "sha256":  "93FB93CD74774247D6382D098B228F504373EF2710FE29A32FD9FB086A3182FF",
+                      "bytes":  1778472
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/coreclr.dll",
+                      "sha256":  "817A9A5E0EA19EC205E3E0792320B8E03B77955A17953F3AB787DB1426B0D930",
+                      "bytes":  4995880
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/createdump.exe",
+                      "sha256":  "B90B997D72AAEAB1CF18998F3E8DE5074A9E63F84E238BD771F84FFDDB05F1FB",
+                      "bytes":  71512
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Cyra.deps.json",
+                      "sha256":  "39E51E80F5B52AC9F534AA6CCF132096EAD0EF5F4F30FEFBCC0454AE50AE1B46",
+                      "bytes":  28010
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Cyra.dll",
+                      "sha256":  "5BCF06169B09DE20D954D1F3C7DF64AE60E58A7D4E6B46446C2265EE203EF83C",
+                      "bytes":  95232
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Cyra.runtimeconfig.json",
+                      "sha256":  "3B1F124D06CF20582E8C93E3608A994E7F12A126FE7E44E81F21ACCB6185011F",
+                      "bytes":  372
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/GodotSharp.dll",
+                      "sha256":  "2AFE2686AACFEFAC36DA6601B59AEB05E560F06E4970CD5036100ACD2CA4249D",
+                      "bytes":  5928960
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/hostfxr.dll",
+                      "sha256":  "99BDD77E4FE14AB284C4A335AC13AFFAE11C840506B032462D26273143F0B767",
+                      "bytes":  366376
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/hostpolicy.dll",
+                      "sha256":  "A2F6F864B9A41C56AD22490EA882ECE574539EB7B23F8913C943613990818E89",
+                      "bytes":  406824
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Microsoft.CSharp.dll",
+                      "sha256":  "8D3CE78A9B693D124656F7313DC4DDC8CA3E4521C8E9C8B08C7B9F0EFA015795",
+                      "bytes":  1005352
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Microsoft.DiaSymReader.Native.amd64.dll",
+                      "sha256":  "315A61C47C41B8D4C815F4274BB6584C1D24B4640C7EEDC354ED5B03A9A1361E",
+                      "bytes":  2195504
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Microsoft.VisualBasic.Core.dll",
+                      "sha256":  "09B24AF28410940E731E72528EE300D889DEC47F44E42177D0B03A1FC408E6F6",
+                      "bytes":  1247056
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Microsoft.VisualBasic.dll",
+                      "sha256":  "F1928DA80470E1F7A098A80124ADB0D34B103ADA30B8E95CD0BD1F4BF18FDA61",
+                      "bytes":  17232
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Microsoft.Win32.Primitives.dll",
+                      "sha256":  "190D9E13EC667B7C311C06213CBFAE12E4B90528DB2F032456F778891AC170EF",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/Microsoft.Win32.Registry.dll",
+                      "sha256":  "4B2E3B646A85C9DB904647F57763A7134DEE6307BA5866F7CE51D32B914CE1CF",
+                      "bytes":  120656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/mscordaccore.dll",
+                      "sha256":  "6F7A3520FB5A30D1C747E7D232B219C1C97A2270429DA7AA1F572AC2C60B28BE",
+                      "bytes":  1348488
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/mscordaccore_amd64_amd64_8.0.2826.26413.dll",
+                      "sha256":  "6F7A3520FB5A30D1C747E7D232B219C1C97A2270429DA7AA1F572AC2C60B28BE",
+                      "bytes":  1348488
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/mscordbi.dll",
+                      "sha256":  "B57C375FDA5AE1270990D3AAF4FCB61872580EFBC313118BB5FF817F3B2786A0",
+                      "bytes":  1234272
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/mscorlib.dll",
+                      "sha256":  "8CC7442F997A6E0DE9157B55058E5E85011FA240A903806F2C501F069E8A45A1",
+                      "bytes":  59176
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/mscorrc.dll",
+                      "sha256":  "26EA1E2DB343DF68CE4018FE7C155E38CFB99F0C6C23BA0E45A00B9801FF0F89",
+                      "bytes":  136528
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/msquic.dll",
+                      "sha256":  "99DAF179EE2DFB5C36493543647B64FC58A24ABA0B16D5E9232B06003FBC9054",
+                      "bytes":  524320
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/netstandard.dll",
+                      "sha256":  "B7C85FF82EDC3DB1424E9B387EED0517CBE2C59691951ED70B41D46F79397696",
+                      "bytes":  100688
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.AppContext.dll",
+                      "sha256":  "70D13D4758C1E5413F820342CE7ECAC436750C4F82D8E818873A86F861E0A0B1",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Buffers.dll",
+                      "sha256":  "390601503FFE659946EBE61FA7B6BFD2B6E1084B39DA06B7692F5FB05F27C5E0",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Collections.Concurrent.dll",
+                      "sha256":  "6FFCD942293576DBD3AB66CA6EF2EA0428F9E84BDACEC63316BC5C069041F37C",
+                      "bytes":  276264
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Collections.dll",
+                      "sha256":  "F0FE3FC9CECF713D5C29A2FECDF6AAFC50B41EFB8130A56AF54B8C9330C1FFC1",
+                      "bytes":  259880
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Collections.Immutable.dll",
+                      "sha256":  "F134239F34D90E805FD44C26D2B350F31915734B1DC1B008E5CCEC89A39A90AA",
+                      "bytes":  837416
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Collections.NonGeneric.dll",
+                      "sha256":  "ABA7167D2E95EE23A55A03586588EB01CA3E63942FF2E1392936692BC337C194",
+                      "bytes":  104272
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Collections.Specialized.dll",
+                      "sha256":  "C4B625CF2EC04FC659E86223CA4BE5421F843ECAC62FEB1A2E5E92E7C70EDA50",
+                      "bytes":  104232
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ComponentModel.Annotations.dll",
+                      "sha256":  "9F8D4AAEA363B146B5484E663D817F0390FF20583B397C124411C50210338AE3",
+                      "bytes":  198480
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ComponentModel.DataAnnotations.dll",
+                      "sha256":  "F4FF4AC0F7F91D66D6CCFF7528D962E2BB8C2C91EC97D64FDE265534F8D49BE6",
+                      "bytes":  16720
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ComponentModel.dll",
+                      "sha256":  "D912B7E2D421A49A4EEE9730764047F058A8D72C9B3618DCC195D6F427B55AE8",
+                      "bytes":  30544
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ComponentModel.EventBasedAsync.dll",
+                      "sha256":  "E5B203C21752934EE92E1F2F9AAE98F28C0A054F5357072EC7D1A6FD036AE7CF",
+                      "bytes":  46888
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ComponentModel.Primitives.dll",
+                      "sha256":  "3DC8BFBF3B542C45646A7057D3E945374C7B85DB69C37F2A16794E88091A5B06",
+                      "bytes":  79656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ComponentModel.TypeConverter.dll",
+                      "sha256":  "534F82E18158A5BF76019B847A1F91DC8F54FB8075561D7678DFCAB89C315382",
+                      "bytes":  747304
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Configuration.dll",
+                      "sha256":  "88AD10299F531BB99C250EE7607B5C2C599CA6A48735E151B16E25521B6F73B2",
+                      "bytes":  19240
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Console.dll",
+                      "sha256":  "664163BFA498AA9D683039885DA244717B9233FA223FB70254C910C437F362ED",
+                      "bytes":  173864
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Core.dll",
+                      "sha256":  "6E6AD94C694681BF3CAB86C60E2A130BA4CFE3C703CD5D5732E5DB7740A4EDF9",
+                      "bytes":  23336
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Data.Common.dll",
+                      "sha256":  "A357B2AC328F4F4C35AF2AA3AA323D519C075B5CE105587A0DC696E5B8E1A996",
+                      "bytes":  2860840
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Data.DataSetExtensions.dll",
+                      "sha256":  "82A930943CA2514878ABE2D44DD1F29ADAB21AFBBE8536B6EDECF9BA93607AF0",
+                      "bytes":  15696
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Data.dll",
+                      "sha256":  "191C61BBB9F35C1B6E46525C01F6F9F377F812F4C4CE5F4BC9FB46E988F85005",
+                      "bytes":  24872
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.Contracts.dll",
+                      "sha256":  "67DF4B81057D30220B8235FE4D8E987D3B5AE25E70C7195282BE299F7885AF87",
+                      "bytes":  16168
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.Debug.dll",
+                      "sha256":  "0D321FB174F9ACBEEC32D9F9B87F1364989B517A5F7A3B30D96A8E0EF0805389",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.DiagnosticSource.dll",
+                      "sha256":  "8501928426904A1B660447CB5CDEAE888EC61A850395910A050FB33BA2541A14",
+                      "bytes":  415528
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.FileVersionInfo.dll",
+                      "sha256":  "6D336F055D3C37AEE6A4280A237BC7FB4C2A17F787FA0B7E1BAE9E768D63B7B4",
+                      "bytes":  46888
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.Process.dll",
+                      "sha256":  "4CA86970668D670A579DB1C5733144048D1E52C2BB2E0892C86F665E39883F8D",
+                      "bytes":  337744
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.StackTrace.dll",
+                      "sha256":  "DF1529192900355B5CBF37DB6C505142570614D9AB233C2B0063AD22565BD406",
+                      "bytes":  46928
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.TextWriterTraceListener.dll",
+                      "sha256":  "FC734F0BCA00D28011486DAB75A531D6B987C03EDC8AFB6EBA05C36D6D665453",
+                      "bytes":  67368
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.Tools.dll",
+                      "sha256":  "0113E905FB40FB9B2969F68CB34D13A87252E240545103DDE425DE35116C18D2",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.TraceSource.dll",
+                      "sha256":  "953BD83CFA994F088C5DD326C1746DDA1DB937C9311C3E58F74E030C3190BB1F",
+                      "bytes":  145232
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Diagnostics.Tracing.dll",
+                      "sha256":  "29C0A0CD1D3E39ECE9CED18B6216F6E3F582EBAEC8AFAA2D9835430A4A03E631",
+                      "bytes":  16168
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.dll",
+                      "sha256":  "4DAE4C0D59A716FF4261FD54CE34276DFA85B43C312FB6B0573C10C0A79FC171",
+                      "bytes":  49960
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Drawing.dll",
+                      "sha256":  "9C4135AD320B1ECD6FC6018603C0FFFE80FF549123F04FA4CDD33C5AADA3D311",
+                      "bytes":  20304
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Drawing.Primitives.dll",
+                      "sha256":  "6D056C7523D827C5DD264AEA88A97342AEAA8A5E5B9A27C5C4E1886EE18C7D05",
+                      "bytes":  132944
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Dynamic.Runtime.dll",
+                      "sha256":  "5D14E94876139EB7C6E6743562FB3D57B89FB097EACBC9BFF346DE1ADD737963",
+                      "bytes":  16168
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Formats.Asn1.dll",
+                      "sha256":  "B556931E2272188FC4B866AE01209ADB9800035CE04E97FD107909A350D403EB",
+                      "bytes":  243496
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Formats.Tar.dll",
+                      "sha256":  "AAF83AFEBD545CA9BA0B29004179F9CFB33FF66685DDE3F3431BD33C88C66649",
+                      "bytes":  276304
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Globalization.Calendars.dll",
+                      "sha256":  "228D77B425A2AAAF8573F2ACDD54DDD83AB5FABB7B34A0015A93A27B2D3365C2",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Globalization.dll",
+                      "sha256":  "D4E83506801BB10E7728B8596A1504CF3F2574AEA608CE50697289176EE3773E",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Globalization.Extensions.dll",
+                      "sha256":  "104E16B939FC66A23C6AB029C3BB296EAEE5E5BE0C5C32658DCF72A1CC3D87DA",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.Compression.Brotli.dll",
+                      "sha256":  "B81ED1F2227CC603E3DABF9ECE94D707D8590981F6A1861D2C2AB17E85A97017",
+                      "bytes":  83752
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.Compression.dll",
+                      "sha256":  "7412D41DE507D170825BD5A01B9C97322568826676B38DA56CA908EB29D3FA75",
+                      "bytes":  263976
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.Compression.FileSystem.dll",
+                      "sha256":  "C9A7E402C148E5B1675242739F605735755C8A64D1ADB73CEE7ED9C3F82E2261",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.Compression.Native.dll",
+                      "sha256":  "D8AFFB69476E2ED41B42D9D954F2478B62AE39F052D7E95BB8482EE4B312ED68",
+                      "bytes":  828712
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.Compression.ZipFile.dll",
+                      "sha256":  "A661C7A32E521144D9C7FE48F65EFEE31DEC593B4B36FC780BC88914FA0206C1",
+                      "bytes":  55080
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.dll",
+                      "sha256":  "6831F01AC858D48C0BFB811618DE97AC562395609CCF8E6DE29CD9CCB91BBC88",
+                      "bytes":  15696
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.FileSystem.AccessControl.dll",
+                      "sha256":  "52FFD727BCEF528C33C80E56D8B0C1F333DA305FFD89F68C82EC3C1671767FCD",
+                      "bytes":  104232
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.FileSystem.dll",
+                      "sha256":  "EFE4F834E06F9B132FA1346FFB1FE7863A545F626C6C83217A6B26A30431C2F4",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.FileSystem.DriveInfo.dll",
+                      "sha256":  "C95ED9C991EB8ED8E77480E176921D67989BF605B2B157E43C9D38BCE64A5964",
+                      "bytes":  55080
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.FileSystem.Primitives.dll",
+                      "sha256":  "E4C0A2BEF16ACABE4E23E29F81E32178CC762B132188CF5622EE5D165B0266E0",
+                      "bytes":  15184
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.FileSystem.Watcher.dll",
+                      "sha256":  "3EF17D11F598BF64A0E6149BC67EC4C4EC5C7DE1CD84448843A1C6D1EDEB661B",
+                      "bytes":  87848
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.IsolatedStorage.dll",
+                      "sha256":  "E56276305E3E327DFC62FA167D9EDB40B39F248EA1D8C113A16AC02D047DDF34",
+                      "bytes":  91944
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.MemoryMappedFiles.dll",
+                      "sha256":  "32297FC204B5427336017E7ADDD4E2273A01219622FA9A77CA2DE00CD2E6E82F",
+                      "bytes":  83752
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.Pipes.AccessControl.dll",
+                      "sha256":  "124B7CBA6F07BC2ED25B792447ACE1F66FD84FFDE61286FABB77CD699E6534F4",
+                      "bytes":  16168
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.Pipes.dll",
+                      "sha256":  "CB54098E26A320593CCD9D42749CA0A80CB17FD4D2A11414D4A433ED45CCCB8A",
+                      "bytes":  165672
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.IO.UnmanagedMemoryStream.dll",
+                      "sha256":  "224E249F692F49280627C74DA33AEBEBFC02386BC43E242BCE29BFFE022F6F82",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Linq.dll",
+                      "sha256":  "1B81642C1EE4F21EBBB57213C14E50DF59AABCD7BF91DE2EEBDF4C0D9F32845B",
+                      "bytes":  542544
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Linq.Expressions.dll",
+                      "sha256":  "4AC5E32AFAD15A081A34C24D438373D9160C088FDAFAD2705E520328B3B62ACB",
+                      "bytes":  3675984
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Linq.Parallel.dll",
+                      "sha256":  "493F9578819D926DC9D6FE45E36225AB971B9CEDD3E1FC1BB8F4EB3C1032B2B4",
+                      "bytes":  804688
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Linq.Queryable.dll",
+                      "sha256":  "E1479860BEE972BDCBD2808A7E95965B75301AFA659E0099098CACEEE1C78877",
+                      "bytes":  173864
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Memory.dll",
+                      "sha256":  "4D6FE7D23C06B4E81748D83A1314218F31BB1E4CE9B6D1EBC7BA8A78A342833C",
+                      "bytes":  157520
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.dll",
+                      "sha256":  "8A7111B2BAAEB5F17996432343B5B082B909D553CE62AB4E8B66DE607B340CB8",
+                      "bytes":  17192
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Http.dll",
+                      "sha256":  "8A7638D615E37D1B271C526979EE36B56C1B56193A33F5929DBEB29D1FA6D6E5",
+                      "bytes":  1730344
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Http.Json.dll",
+                      "sha256":  "0DF5D295BDA269878ED2D10D88B375D3C9EEFBBF1769727BFA242A15DCB1EEB0",
+                      "bytes":  128808
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.HttpListener.dll",
+                      "sha256":  "2B628EF109766C39099CFE346D7A276F0FDC16302D5DA71629B439BA1FE6ECF6",
+                      "bytes":  550696
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Mail.dll",
+                      "sha256":  "445C14D839A9FCAAC8A736A326340398D2498F8A3D9544EF4EBBD1D931083040",
+                      "bytes":  431912
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.NameResolution.dll",
+                      "sha256":  "53A3215B359E108F0315E81E4A1C4D9981D5BD3E1ADC3891F598DCFD7E4609DC",
+                      "bytes":  112464
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.NetworkInformation.dll",
+                      "sha256":  "8CB2DE92583203ABF13AB4CBC3A5C65A9B4140B84CF43C22442850C28936F94E",
+                      "bytes":  157480
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Ping.dll",
+                      "sha256":  "414F854EE4FC1B5B099869D6921E14DF60A33DC3EA3B904B0CCF253CA7776FA9",
+                      "bytes":  96040
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Primitives.dll",
+                      "sha256":  "FFB439EE971575C80749639EAA2593194DE95DFC18EAAAA4011DF9A39FB64181",
+                      "bytes":  231248
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Quic.dll",
+                      "sha256":  "2000E89F1EFA326911367F24A23068C25C3E22D53F46D104202F2DA0EEBFB31C",
+                      "bytes":  284456
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Requests.dll",
+                      "sha256":  "3B0FA705AA4A3423ECC56B44FE74EBAF0B9B255AA5974C665113B19FB47EDD6A",
+                      "bytes":  345896
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Security.dll",
+                      "sha256":  "4F471C45207AE53AD01CB0D16798C0CD94FB29A8253989DA8C2F771E6DB5E7B0",
+                      "bytes":  669480
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.ServicePoint.dll",
+                      "sha256":  "101C378D8C485037CE88F0483B2211E00A02C9733248EA4BC7A744B20F16F286",
+                      "bytes":  46888
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.Sockets.dll",
+                      "sha256":  "096C5CA2B8868C50991F183F0CBF8B32326CBF197F9A6CEBE132C5AB63513D24",
+                      "bytes":  546600
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.WebClient.dll",
+                      "sha256":  "BD7F9573782982E9BBC797F2995CE26D5C43553B65F596BEC459BFD87A80459E",
+                      "bytes":  169768
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.WebHeaderCollection.dll",
+                      "sha256":  "ED63DA038FE92FDC9F606F9A4E11A55C0173916F9BC0CF678B990F7EA6C30665",
+                      "bytes":  67368
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.WebProxy.dll",
+                      "sha256":  "C8222A70A4B2AC73FD5DF28C8C4AD64360B41CF3F9CFB640DAFE118E1F9BCA56",
+                      "bytes":  42792
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.WebSockets.Client.dll",
+                      "sha256":  "D400F77AF433AFD3E0C02DED8835A390EDC86E59803BF72FCEBC69BE68F5F730",
+                      "bytes":  100136
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Net.WebSockets.dll",
+                      "sha256":  "4A99629247A2EAC2CE2A8EFA7B06E6BBA0A2E871ECBF22117A47651679123AD2",
+                      "bytes":  190248
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Numerics.dll",
+                      "sha256":  "38D649CCF88525912FB52B950514587334E44CF87D14BB6E562FEDA04C8AAF71",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Numerics.Vectors.dll",
+                      "sha256":  "71AD0892846B23AA85F088A9F3390574ED9E1550C3BED0A834332218AADF7A5D",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ObjectModel.dll",
+                      "sha256":  "015061C7FEA90CEAAABE2669DB8B8110249295E19A6A571363C8A581AD9BA7DD",
+                      "bytes":  79696
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Private.CoreLib.dll",
+                      "sha256":  "7F48A9493A1D9F6C64A51C3EC357CF8534874EA62240A54C2A1570A5913148A4",
+                      "bytes":  13174608
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Private.DataContractSerialization.dll",
+                      "sha256":  "E5116B63222CC04D7A485D344FD52CE759948CE7CE9F11F90ECD99DEFC0FAF2A",
+                      "bytes":  2082600
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Private.Uri.dll",
+                      "sha256":  "7CE81174FDBA93A1E12C596EA3E1AD4BCC9E798710292E1629CBE827EE34458B",
+                      "bytes":  259880
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Private.Xml.dll",
+                      "sha256":  "9F4783F9F82217DC44AAE218A5D203B314313305B64EC97A0F8CAF4FC53E7D86",
+                      "bytes":  7997224
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Private.Xml.Linq.dll",
+                      "sha256":  "3DFC8C3F32E242EE23A7D7C97A13C5E798248D1AEC2212DA8291BE9898FF82F3",
+                      "bytes":  403240
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.DispatchProxy.dll",
+                      "sha256":  "35D3F0A768434A0FB204E6157768AAD21CB0EBDDE46F8CDA51FAA18042A2ADDE",
+                      "bytes":  75560
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.dll",
+                      "sha256":  "852E28C648500D37A47626F301B86CA48ED466A4106DCC6C15A162591A1DD136",
+                      "bytes":  16168
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.Emit.dll",
+                      "sha256":  "71222005E717CA62691DD223965787338A6487FE832542A37015699735AF1051",
+                      "bytes":  128808
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.Emit.ILGeneration.dll",
+                      "sha256":  "A35717FA63D70940FE0E06F9FC06A695B08882DAC2D241C40545DA9D0B313420",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.Emit.Lightweight.dll",
+                      "sha256":  "6171CD637066658B9E4EFCA7C4346DF7C3089D2AAA3AAE0C1D3A80FCAD4AE1A5",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.Extensions.dll",
+                      "sha256":  "9AF49AA85ED80F0824661D52EE5E3793E995708F1368B0F7608C630E3AC05281",
+                      "bytes":  15184
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.Metadata.dll",
+                      "sha256":  "43A726A2F631336922982352F7691CB4AA14224C8BA8805F88F3D0868D97A10F",
+                      "bytes":  1115944
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.Primitives.dll",
+                      "sha256":  "C3B10D98770EFFD8CC6FAC02A79F3DE7E911B96904D8F5809C9C77D0B8664C8B",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Reflection.TypeExtensions.dll",
+                      "sha256":  "55383FFE633BB6EC9A69DB0256C60FD1D8739484209ACA71B6828434489651AA",
+                      "bytes":  42792
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Resources.Reader.dll",
+                      "sha256":  "57482053896B74FF4A6B6CA788DA485918E3C7697AE06B1499C94025EF1AB995",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Resources.ResourceManager.dll",
+                      "sha256":  "606F989BF9BCDC082DB5B3C75F43EAD0E3AEBCDE9D79FACFAB6BC4A1DBB08958",
+                      "bytes":  15696
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Resources.Writer.dll",
+                      "sha256":  "5EEC6811DBC64D91C6581C878ACB7BD6AD8D66AA570FDACDD6B2AC60020C1E01",
+                      "bytes":  50984
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.CompilerServices.Unsafe.dll",
+                      "sha256":  "E2A149F4D74E6B2156549E44747F5B47BE0053EB32A8EC2C2EA2A03C21CDCCB7",
+                      "bytes":  15184
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.CompilerServices.VisualC.dll",
+                      "sha256":  "1E0D66E081A78B06EF7A9597C8F6926181C417D006059B04A43B48352EDD3F2B",
+                      "bytes":  30544
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.dll",
+                      "sha256":  "1B56F3DA3567FF55F013332AE17796AC6CD067018878D8F322F8425B04B70720",
+                      "bytes":  43304
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Extensions.dll",
+                      "sha256":  "57152F7AF36BFA9AB33719B25D11940992CF4261EDB6BA73FBD24C15E2F3E75B",
+                      "bytes":  17744
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Handles.dll",
+                      "sha256":  "E36B1642D7FDE463A1BDBF02D58C4B1636BA90DD40436C081D5D037EC0AEB4AC",
+                      "bytes":  15184
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.InteropServices.dll",
+                      "sha256":  "74A2DD12E1C0F3D9ACA3F11E160A1DE7A5BD4447ED8BE3071377217A516F6874",
+                      "bytes":  96080
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.InteropServices.JavaScript.dll",
+                      "sha256":  "446F1747E8FCE35892FE616222329FE59822BC910912A2759549C6FEE0899441",
+                      "bytes":  51024
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.InteropServices.RuntimeInformation.dll",
+                      "sha256":  "929732124E6389902BAFF9D7847560F214272AEE487B807748C567E308C81837",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Intrinsics.dll",
+                      "sha256":  "941B2C84EC076462C6F9BFC53E72667D1A7B839CE12EE42762147CF063A4ADFC",
+                      "bytes":  16680
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Loader.dll",
+                      "sha256":  "AAA8559AC0ED0C1C30EAE09FD53BB8FE8EB50DFBD090D24C5E2428E4A9E59369",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Numerics.dll",
+                      "sha256":  "4B8751339F236A7650409364909230BC47DA18E84FABA4E54E4C3A6CE660B324",
+                      "bytes":  329512
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Serialization.dll",
+                      "sha256":  "C4EE882D228CFF020A9F3942B673F25A16232751E6DAA218A12C639D4414AFA7",
+                      "bytes":  16680
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Serialization.Formatters.dll",
+                      "sha256":  "F965DF62CC86231C932BE620C1626D9DA2884AE356091EF9502654C79393C5A9",
+                      "bytes":  309072
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Serialization.Json.dll",
+                      "sha256":  "A243048643743C28983379CB85BF771A25FE49A1E706C461C4EDEAA2F4274B4C",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Serialization.Primitives.dll",
+                      "sha256":  "93068E07A64EE6933EABB5E2493F24DE4DE56AB047059B380FFB309BE78CF0D6",
+                      "bytes":  38696
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Runtime.Serialization.Xml.dll",
+                      "sha256":  "F19419BA2E357188E97CC13A9992435C654FC4C1F2E1814B3FA9B1E4D9CDBEE0",
+                      "bytes":  16720
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.AccessControl.dll",
+                      "sha256":  "799CA7586A9A0FFD86FEC506C43F40EE3ED16E96F71DCFEAAC5FDF46DFC10308",
+                      "bytes":  231208
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Claims.dll",
+                      "sha256":  "20DBAE23F8943877EF1B9890BC2D6AE3A2716FBB32E26EB124AD435E9E534737",
+                      "bytes":  100136
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Cryptography.Algorithms.dll",
+                      "sha256":  "49B6AF32F16B17CA6DFC04CC94FF619EEBECDFFF45C4326501D6CE037BEBEEAB",
+                      "bytes":  17192
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Cryptography.Cng.dll",
+                      "sha256":  "1AD6A6DB66A506472F284D6CAD17034F9968A9041CC511104E67AAE195801135",
+                      "bytes":  16208
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Cryptography.Csp.dll",
+                      "sha256":  "48B1588F7C855FBC9BFED721A6A147D69A25AAA3CC47A9537D3EF6695AF83C59",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Cryptography.dll",
+                      "sha256":  "A998A46E2379D65412D54BB6F55E0EB5F16C3D856228882311F011C870C668B4",
+                      "bytes":  2049832
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Cryptography.Encoding.dll",
+                      "sha256":  "36E54B8FEEE5D0F045A3B1ECB3DE1E1F83A9FA380F27BCFC081FEE74354D64FD",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Cryptography.OpenSsl.dll",
+                      "sha256":  "5FFA779DC744A872F91B2BFCC9355457D812291AACDD912FED445FB477742852",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Cryptography.Primitives.dll",
+                      "sha256":  "58D863B9CD93A6AC5DA1243CD234BD1A11073326E4EFDC6914FDBC003EB8CC65",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Cryptography.X509Certificates.dll",
+                      "sha256":  "A158300061936820A672609057D8195E79DC82713E3B4614C9996014C5DF45D7",
+                      "bytes":  16720
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.dll",
+                      "sha256":  "FB8B75ECB5A673D2B377461F25BEDC9F9669BD41D59123220EF5DCD2F0C5D700",
+                      "bytes":  18256
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Principal.dll",
+                      "sha256":  "71B3F78DC069370F6226B241AAB927CEE726E10C6ED549D284831A208DC293B7",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.Principal.Windows.dll",
+                      "sha256":  "37858EE4C9CC2D07C175D379321D86851E3E89F2278593153CD12F5E33C6655B",
+                      "bytes":  186192
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Security.SecureString.dll",
+                      "sha256":  "9A46806C81D158205F3801FB74C8DC5CB34509E1B7F3F6B1E75668545340E929",
+                      "bytes":  15184
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ServiceModel.Web.dll",
+                      "sha256":  "44064266276CAFF2C687EFAA36145C1009CFB7C5EC1E3B0FFA1EDB3B879D434C",
+                      "bytes":  16680
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ServiceProcess.dll",
+                      "sha256":  "E2FEAE7BBB12E5C12C3B5F62B61CD09BDF8A7E82AA113E13A02015E7455B1DFC",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Text.Encoding.CodePages.dll",
+                      "sha256":  "F56854238478325C8E5FC15AA355DDE581C697CC0EDF1A0D396D7973C86A515A",
+                      "bytes":  862032
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Text.Encoding.dll",
+                      "sha256":  "4DD24836A9C6DEB7854B829480C9FFC90440D4EAB56A3C47C86AD2B630FC9518",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Text.Encoding.Extensions.dll",
+                      "sha256":  "E35568FCBDDD90781F904F5BBB8D925A35F509C7E1CE626D24E7D43EA6AD2C0A",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Text.Encodings.Web.dll",
+                      "sha256":  "A6BC1AD954C3213BBA9B0E27A3AAAE8321ADFA0642EC679BF4452F7819C8AD54",
+                      "bytes":  132904
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Text.Json.dll",
+                      "sha256":  "A5DEAF26B38846D1F6E904FAF4FC6CE50958B1FFB6369F4505E9F6DFC2B37FE2",
+                      "bytes":  1500968
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Text.RegularExpressions.dll",
+                      "sha256":  "6989D5ED58E0C9A7C0F1208496F10607240D4AF91886026E661FFA879288E617",
+                      "bytes":  1021776
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.Channels.dll",
+                      "sha256":  "96C14E88DF23B56FEA9BB23D220CBAAF9EB28DC0FD36B573DD68C0FA2C029DDA",
+                      "bytes":  132904
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.dll",
+                      "sha256":  "76900E5C96B72E6E74477A90897F86C9F8B78EB2169010298CD4AECEC5466AE3",
+                      "bytes":  83752
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.Overlapped.dll",
+                      "sha256":  "1CAEF0A14790F5782C07B18A9D989E86DA9D976910461C0CE161680A6FBBBEDF",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.Tasks.Dataflow.dll",
+                      "sha256":  "D1C57F9DA84FE2E26F62937695FB493EB3A88C30F38DCA8E73F0C025ACE1F6CA",
+                      "bytes":  489256
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.Tasks.dll",
+                      "sha256":  "A7D6E33DDB5FCEFE0C812FFE18013BD57CE2CDC19145FD66826D0A6A5144B7AF",
+                      "bytes":  16680
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.Tasks.Extensions.dll",
+                      "sha256":  "F798ED147B1B2970A07027F388D885E0CB6490D39360500828E96359BD7EE4D2",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.Tasks.Parallel.dll",
+                      "sha256":  "8B44C1F8073E152578F808ED3DC5FC2661767CFD204E47145E43F541DA078641",
+                      "bytes":  132944
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.Thread.dll",
+                      "sha256":  "565346C61FACA21110027638E7AF298E0162D587AFC3F5BDCB993C80922A1CF0",
+                      "bytes":  15696
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.ThreadPool.dll",
+                      "sha256":  "58083250CBBD5D66D7917C1135E65EDC5480024A8411AE05CF56F7E9435115BA",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Threading.Timer.dll",
+                      "sha256":  "4EC9CEE7F8051AFC436A6A2EAD119DA234AD313FA44D57C8CBB77E2DF5FD5226",
+                      "bytes":  15144
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Transactions.dll",
+                      "sha256":  "9F4AA9799508B7F745DFE6F8C0657527009FA340788033BDD2419C2C240C018D",
+                      "bytes":  16168
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Transactions.Local.dll",
+                      "sha256":  "92D894A79642D9D6ACBA0B2FB16D2633B6C1892A63475D93910CCC866C302375",
+                      "bytes":  661328
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.ValueTuple.dll",
+                      "sha256":  "A8A237BE5654024D968915D4153893FFD89EF738F323EE71808CFF3FA13314DC",
+                      "bytes":  15184
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Web.dll",
+                      "sha256":  "C0EFF58EF750D856FDD2BCB9667D6C8554B686AFC7DFDE63507D8EE3686DB4D5",
+                      "bytes":  15184
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Web.HttpUtility.dll",
+                      "sha256":  "893EDADE6796FB65F2D7DE2D262B08FDEE2DADEED7CDA4A25DA8BE1A022180BD",
+                      "bytes":  59176
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Windows.dll",
+                      "sha256":  "BEF65B7CAD1CDB87787DD1B8F4A7959EC85119E25B06C921F2CF2F000DAF7F07",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.dll",
+                      "sha256":  "31C2211FDE0425FB8AB8C3680BD80CF4AF9AF4DBCEAE9C69DFC0F8CA2AA283CE",
+                      "bytes":  23376
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.Linq.dll",
+                      "sha256":  "261BDE32F07223E25B62F38BF8735379007FB6D66D07C275B491AE8595E56DD3",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.ReaderWriter.dll",
+                      "sha256":  "32151D8D938EB388A6A0ABC05AB955430F21ABA92E960BDB6E5C6029A45D2F34",
+                      "bytes":  21800
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.Serialization.dll",
+                      "sha256":  "5DCEEA1662D1E3E5AC651C59006D1B873F48B2F9670080848951AB5EDE4AB7F2",
+                      "bytes":  16208
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.XDocument.dll",
+                      "sha256":  "D6F34C5EA1BBCC6B136110BF477D11D86D8220658996E321D36CE51A35BFF159",
+                      "bytes":  15696
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.XmlDocument.dll",
+                      "sha256":  "35E720EFF597C3A80BE4EFC59D05DA3CB04FD6518E6F29C349CD8E7BA6264018",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.XmlSerializer.dll",
+                      "sha256":  "4451557F85BB30CA5F5327EAAE3FE678DCA0C781E5B3BFC07DA8F753E2D0487D",
+                      "bytes":  17704
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.XPath.dll",
+                      "sha256":  "E7DF135B986325852CD542450E322CE7AA403B61C3B2FF0521BA4354646AFCFA",
+                      "bytes":  15656
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/System.Xml.XPath.XDocument.dll",
+                      "sha256":  "4B0D8142F4855327F4875CB312954109C297D752503B5C688FA94637DC4946EB",
+                      "bytes":  30504
+                  },
+                  {
+                      "path":  "data_Cyra_windows_x86_64/WindowsBase.dll",
+                      "sha256":  "36AA643A6F987B90A6110F46F592BE3E8DBED6DC60CCDDCCDE76ACCF23CABEE8",
+                      "bytes":  16168
+                  },
+                  {
+                      "path":  "Executar_Teste.cmd",
+                      "sha256":  "C75CC732C47A6B7CF0B4FC87E3DFC04DE049E21964EA3E5ED77DC97C7A0D9C91",
+                      "bytes":  95
+                  },
+                  {
+                      "path":  "Executar_Teste.ps1",
+                      "sha256":  "B6492EC6F249D35CCEF43F35D4E475937ADFEE97B951C4DB55C17A14F7EEA716",
+                      "bytes":  5168
+                  },
+                  {
+                      "path":  "Guia_Lucas_Testes.md",
+                      "sha256":  "2FE4A64E80487B7E19C6F2DF94531CEB49171496810DC3DD9CE455C553F645CA",
+                      "bytes":  9509
+                  },
+                  {
+                      "path":  "test-package.json",
+                      "sha256":  "949DF62C7F6426286BF4CDBABA3D4166551D1821E23996FE3D016D7CF045BF0D",
+                      "bytes":  389
+                  }
+              ]
+}

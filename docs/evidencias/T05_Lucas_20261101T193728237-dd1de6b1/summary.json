@@ -1,0 +1,41 @@
+{
+    "schema":  1,
+    "protocol":  "A03-v2",
+    "machine_label":  "Lucas",
+    "scenario":  "A05",
+    "package_id":  "5d244af2a99b595feb8e92d8390923839ecd4a1483c2acfdd3cd4b941e8112b5",
+    "exit_code":  0,
+    "collector_complete":  true,
+    "invalid_json_lines":  0,
+    "dropped_records":  0,
+    "headless":  false,
+    "performance_assessment":  "descriptive_only_requires_review",
+    "sample_count":  235,
+    "fps_median":  60,
+    "fps_sample_min":  14,
+    "private_memory":  {
+                           "samples":  235,
+                           "first_bytes":  253067264,
+                           "last_bytes":  265220096,
+                           "max_bytes":  265220096,
+                           "delta_bytes":  12152832
+                       },
+    "engine_errors":  0,
+    "engine_warnings":  0,
+    "human_markers":  11,
+    "game_event_counts":  {
+                              "A05_room_ready":  5,
+                              "A05_landing":  5,
+                              "A05_movement":  136,
+                              "A05_attack":  9,
+                              "A05_health_changed":  22,
+                              "A05_damage_received":  18,
+                              "A05_damage_applied":  22,
+                              "A05_stunned":  1,
+                              "A05_room_reset":  1,
+                              "A05_death":  3,
+                              "A05_safe_return":  3
+                          },
+    "automatic_test_verdict":  "not_assigned",
+    "limitations":  "FPS agregado, memória do processo e eventos instrumentados. Ausência de erro não comprova aprovação funcional; dados do editor/headless não são benchmark release; sem prova de ausência de vazamento."
+}

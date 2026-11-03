@@ -36,3 +36,6 @@ $RECYCLE.BIN/
 
 # Evidências brutas de execução: compartilhar sessão escolhida, sem versionar em massa.
 TestResults/
+
+# Pacote recebido A05: evidências selecionadas preservadas separadamente.
+/docs/evidencias/Cyra_A05_Teste_Feito/

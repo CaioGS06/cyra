@@ -1,0 +1,60 @@
+{
+  "analysis_date": "2026-11-03",
+  "test": "T05",
+  "prompt": "P13",
+  "source": "docs/evidencias/Cyra_A05_Teste_Feito/a05-test/TestResults/20261101T193728237Z-dd1de6b1",
+  "session_id": "20261101T193733064Z-bfa40d2a",
+  "package_id": "5d244af2a99b595feb8e92d8390923839ecd4a1483c2acfdd3cd4b941e8112b5",
+  "package_files_verified": 193,
+  "same_files_as_Caio_P12": true,
+  "summary_cross_checked": true,
+  "event_counts": {
+    "session_start": 1,
+    "engine_message": 1,
+    "A05_room_ready": 5,
+    "A05_landing": 5,
+    "sample": 235,
+    "focus_lost": 1,
+    "focus_gained": 1,
+    "human_step_marker": 11,
+    "A05_movement": 136,
+    "A05_attack": 9,
+    "A05_health_changed": 22,
+    "A05_damage_received": 18,
+    "A05_damage_applied": 22,
+    "A05_stunned": 1,
+    "A05_room_reset": 1,
+    "A05_death": 3,
+    "A05_safe_return": 3,
+    "session_end": 1
+  },
+  "duration_seconds": 236.9337886,
+  "marker_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "minimum_contact_interval_seconds": 0.7996057999999948,
+  "duplicate_attack_target_hits": 0,
+  "sample_focus_counts": {
+    "true": 233,
+    "false": 2
+  },
+  "human_report": "Completed route without problems; nothing unusual perceived; script required disabling unspecified security.",
+  "limitations": [
+    "11 F9 markers, no A05_jump; no invented twelfth marker or jump",
+    "All nine attacks face right; right wall/left attack not confirmed",
+    "Source review and provisional-parameter acceptance by Lucas not reported",
+    "Unspecified security change and time outside game not provided",
+    "No final RNF04 benchmark"
+  ],
+  "assessment": "A05/T05 closed for current scope after Caio explicitly accepted incomplete Lucas coverage. Caio alone reviewed code; Lucas played only; time, Lucas parameter acceptance and security details not reported."
+}

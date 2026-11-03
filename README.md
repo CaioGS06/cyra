@@ -2,7 +2,7 @@
 
 Estudo de caso acadêmico de desenvolvimento de um jogo 2D com Godot .NET/C# e curadoria humana obrigatória. O escopo planejado contém três seções curtas, combate/vida, mimetismo de dois inimigos e duas habilidades, dois bloqueios e um save local único.
 
-**Implementado:** A01 preservada, documentação A02/A03, coletor optativo e **sala A05 com jogador próprio, movimento, combate, vida e reinício local**. A05/T05 validada por Caio em P12, código sem alterações e valores aceitos provisoriamente; execução/revisão A05 de Lucas pendente. Absorção, habilidades, seções, obstáculos e save ainda não foram implementados.
+**Implementado:** A01 preservada, documentação A02/A03, coletor optativo e **sala A05 com jogador próprio, movimento, combate, vida e reinício local**. A05/T05 validada por Caio em P12, código sem alterações e valores aceitos provisoriamente; execução de Lucas recebida em P13, com relato positivo, coleta completa e lacunas de cobertura aceitas por Caio; T05 encerrado no escopo atual. Absorção, habilidades, seções, obstáculos e save ainda não foram implementados.
 
 Código, cena de teste e documentação tiveram assistência de IA (Codex). Arte, animação, som e narrativa finais deverão ser integralmente humanos. Nenhum asset artístico foi gerado; os visuais atuais são exclusivamente nós `ColorRect` e `Label` do Godot.
 
@@ -101,7 +101,7 @@ O Git ignora caches, exportações e temporários, preservando `.uid` e metadado
 - [A02 — escopo, requisitos e modelos: revisão documental aprovada com ajustes](docs/A02_Escopo_Requisitos_Modelos.md)
 - [A03 — protocolo simplificado, revisão documental concluída com ajustes](docs/A03_Protocolo_Avaliacao_Curadoria.md)
 - [A05 — componentes, parâmetros provisórios e verificações](docs/A05_Movimento_Combate_Vida.md)
-- [T05 — revisão de Caio registrada; Lucas pendente](docs/evidencias/T05_A05_revisao.md)
+- [T05 — revisões e resultados de Caio/Lucas](docs/evidencias/T05_A05_revisao.md)
 - [Prompt P01 e roteiro original preservado](docs/Prompts_Utilizados.md)
 - [Tabela metodológica inicial](docs/Diario_Experimento_IA.md)
 - [Saída original preservada](docs/saidas_originais/D01_A01.zip), antes de revisão humana
@@ -120,4 +120,4 @@ Os eventos atuais incluem A01 e A05 (movimento/salto/pouso, ataque, dano, vida, 
 
 O ensaio de comportamento `tools/Testing/VerifyA05.gd` carrega as cenas C# na física da engine, com entrada simulada e fixtures identificadas, e verifica movimento, alcance/direção, intervalos, atordoamento e reinícios repetidos. Execução **sem janela**, na máquina de Caio, pela IA; não equivale a teste gráfico humano ou benchmark. Os resultados finais, logs e limites estão na [ficha T05](docs/evidencias/T05_A05_revisao.md). A regressão A01 é registrada separadamente, sem alterar T00 histórico.
 
-Comando opcional para repetir o ensaio na raiz (fora do pacote; não é tarefa de Lucas): `& $godot --headless --path . --max-fps 240 --script res://tools/Testing/VerifyA05.gd`. Para coletar logs desse ensaio, adicionar os argumentos `--cyra-test` e uma pasta exclusiva conforme A03. No pacote humano, basta jogar/F9/relato; o resumo não atribui veredicto automático. Caio confirmou 12 etapas funcionando e código sem alterações, aceitou os parâmetros provisórios e informou 15 min de revisão. A sessão tem dez F9, com esquecimento de marcas esclarecido, 181 amostras e duas mortes/retornos, sem erros/avisos. [Validação de Caio](docs/evidencias/T05_A05_validacao_humana_Caio.md). Lucas ainda sem execução/revisão A05 informada. Não há commit automático.
+Comando opcional para repetir o ensaio na raiz (fora do pacote; não é tarefa de Lucas): `& $godot --headless --path . --max-fps 240 --script res://tools/Testing/VerifyA05.gd`. Para coletar logs desse ensaio, adicionar os argumentos `--cyra-test` e uma pasta exclusiva conforme A03. No pacote humano, basta jogar/F9/relato; o resumo não atribui veredicto automático. Caio confirmou 12 etapas funcionando e código sem alterações, aceitou os parâmetros provisórios e informou 15 min de revisão. A sessão tem dez F9, com esquecimento de marcas esclarecido, 181 amostras e duas mortes/retornos, sem erros/avisos. [Validação de Caio](docs/evidencias/T05_A05_validacao_humana_Caio.md). Lucas enviou execução A05 com 235 amostras, 11 F9 e três mortes/retornos; relato positivo, sem salto registrado. [Análise Lucas/P13](docs/evidencias/T05_A05_validacao_Lucas.md) distingue cobertura parcial e esclarecimentos recebidos: Lucas só jogou; código validado por Caio, lacunas aceitas e tempo/detalhes do ambiente de Lucas não informados. A05 integrada em `13c7add`; nenhum novo commit automático.
