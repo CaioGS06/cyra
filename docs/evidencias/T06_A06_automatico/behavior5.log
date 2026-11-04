@@ -1,0 +1,60 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+A03: teste ativo; F9 marca a próxima etapa. Logs: C:/Users/caio/GIT/cyra/.godot/a06/run5
+PASS A06 habilita mimetismo
+PASS processo novo sem aquisicoes
+PASS troca sem aquisicao rejeitada
+PASS investida ausente rejeitada
+PASS salto extra ausente rejeitado
+PASS alvo vivo rejeitado
+PASS alvo distante rejeitado
+PASS absorver A atordoado
+PASS troca durante absorcao rejeitada
+PASS repeticao durante absorcao rejeitada
+PASS A adquirida e equipada
+PASS alvo removido da disponibilidade
+PASS alvo absorvido rejeitado
+PASS absorvido nao recebe dano
+PASS pulo basico com A
+PASS segundo pressionamento executa adicional
+PASS terceiro salto rejeitado
+PASS pouso restaura adicional
+PASS jogador morto rejeitado
+PASS morte com A preserva aquisicao/ativa e restaura vida
+PASS morte reinicia ambos inimigos
+PASS B adquirida e equipada via input E
+PASS troca valida para A
+PASS consome adicional antes de troca
+PASS A B A nao recupera adicional
+PASS investida aerea permitida
+PASS troca durante investida rejeitada
+PASS investida consome uso aereo
+PASS troca apos investida aceita
+PASS B A B nao restaura investida
+PASS pouso restaura uso aereo
+PASS investida solo
+PASS investida respeita parede
+PASS intervalo solo respeitado
+PASS solo permite repetir apos intervalo
+PASS troca durante ataque rejeitada
+PASS reabsorver A reiniciado
+PASS reabsorcao nao equipa/cura/renova usos
+PASS indicador segue estado B
+PASS cor tecnica B sincronizada
+PASS morte com B preserva ambas e ativa
+PASS retorno restaura vida/usos
+PASS J + 2 rejeita troca e nao a enfileira
+PASS novo pressionamento consome extra
+PASS segurar nao repete impulso adicional
+PASS investida no ar em fixture alta
+PASS uso aereo continua gasto apos intervalo e troca
+PASS morte com ambas adquiridas e A ativa preserva estado
+PASS HUD fixo sincronizado no retorno
+PASS dois candidatos elegiveis iniciam absorcao
+PASS empate por ID ordinal escolhe fixture_a
+PASS candidato restante selecionado
+PASS afastar durante absorcao rejeita conclusao
+PASS B ativa nao concede salto adicional
+PASS investida para verificar dano normal
+PASS investida nao concede invulnerabilidade
+PASS R reinicia mundo preservando aquisicoes

@@ -1,0 +1,43 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Inicialização do Projeto (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Escaneando estrutura de arquivos...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Carregando nomes de classe globais...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verificando GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Criando scripts autoload...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Inicializando plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Iniciando escaneamento de arquivos...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Started Publishing .NET project... (1 steps)[39m[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Running dotnet publish[39m[0m
+[92m[ DONE ][39m [1mdotnet_publish_project[22m
+[0m
+[   0% ] [90m[1msavepack[22m | Started Empacotando (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | Armazenando Arquivo: res://.godot/exported/133200997/export-894d169b1199545b76fa5cce2750d0a0-TestSceneA01.scn[39m[0m
+[   6% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Test/TestSceneController.cs[39m[0m
+[  12% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Test/TestActor.cs[39m[0m
+[  18% ] [90m[1msavepack[22m | Armazenando Arquivo: res://.godot/exported/133200997/export-10fde548af9cd387520e35b58c9a5d05-TestRoomA05.scn[39m[0m
+[  24% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Test/A05RoomController.cs[39m[0m
+[  30% ] [90m[1msavepack[22m | Armazenando Arquivo: res://.godot/exported/133200997/export-97bbde590caea1a8584ef632c6d1cc2e-Player.scn[39m[0m
+[  35% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Player/PlayerController.cs[39m[0m
+[  41% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Core/Health.cs[39m[0m
+[  47% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Player/PlayerMimicry.cs[39m[0m
+[  52% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Player/MimicryPresentation.cs[39m[0m
+[  58% ] [90m[1msavepack[22m | Armazenando Arquivo: res://.godot/exported/133200997/export-70516558e1d8b8a32dc6bf4c32a311cf-BasicEnemy.scn[39m[0m
+[  64% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Enemies/BasicEnemy.cs[39m[0m
+[  69% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Test/HealthIndicator.cs[39m[0m
+[  75% ] [90m[1msavepack[22m | Armazenando Arquivo: res://.godot/exported/133200997/export-a4c2f03f8db00def79dc8b57fc057a8e-TestRoomA06.scn[39m[0m
+[  81% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Test/A06RoomController.cs[39m[0m
+[  87% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Core/MimicrySession.cs[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scripts/Core/TestRunRecorder.cs[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scenes/Test/TestSceneA01.tscn.remap[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scenes/Test/TestRoomA05.tscn.remap[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scenes/Entities/Player.tscn.remap[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scenes/Entities/BasicEnemy.tscn.remap[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://Scenes/Test/TestRoomA06.tscn.remap[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://.godot/global_script_class_cache.cfg[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://.godot/uid_cache.bin[39m[0m
+[  93% ] [90m[1msavepack[22m | Armazenando Arquivo: res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m

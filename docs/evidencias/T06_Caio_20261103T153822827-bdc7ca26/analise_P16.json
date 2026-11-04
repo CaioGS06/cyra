@@ -1,0 +1,154 @@
+{
+  "analysis_date": "2026-11-04",
+  "prompt": "P16",
+  "executor_and_reviewer": "Caio",
+  "session_id": "20261103T153824197Z-4cc8cdb8",
+  "package_id": "5952a35952ec851ee781abb89ddf185f474473c7fc1db1b58a97e9bef5d24d44",
+  "same_files_as_automatic_release": true,
+  "verified_files": 193,
+  "event_counts": {
+    "session_start": 1,
+    "engine_message": 1,
+    "A06_uses_restored": 106,
+    "A06_room_ready": 5,
+    "A05_landing": 101,
+    "sample": 667,
+    "focus_lost": 2,
+    "focus_gained": 2,
+    "A06_switch": 111,
+    "A06_dash": 176,
+    "human_step_marker": 16,
+    "A05_movement": 471,
+    "A05_jump": 134,
+    "A06_absorb_attempt": 7,
+    "A06_absorb_result": 7,
+    "A05_attack": 15,
+    "A05_health_changed": 24,
+    "A05_damage_applied": 24,
+    "A05_stunned": 3,
+    "A06_acquired": 2,
+    "A06_extra_jump": 38,
+    "A05_damage_received": 15,
+    "A05_death": 3,
+    "A06_safe_return": 3,
+    "A06_room_reset": 1,
+    "session_end": 1
+  },
+  "marker_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "collector_seconds": 674.2975595,
+  "reported_minutes_reading_guide_and_testing": 37,
+  "source_review_minutes": "not separately reported",
+  "returns": [
+    {
+      "entity": "player",
+      "cycle": 1,
+      "current": 5,
+      "maximum": 5,
+      "safe_point": "a06_safe",
+      "x": 140,
+      "y": 416,
+      "enemy_health": 3,
+      "enemy_b_health": 3,
+      "active": "habilidade_A_pulo_duplo",
+      "has_a": true,
+      "has_b": false
+    },
+    {
+      "entity": "player",
+      "cycle": 3,
+      "current": 5,
+      "maximum": 5,
+      "safe_point": "a06_safe",
+      "x": 140,
+      "y": 416,
+      "enemy_health": 3,
+      "enemy_b_health": 3,
+      "active": "habilidade_B_investida",
+      "has_a": true,
+      "has_b": true
+    },
+    {
+      "entity": "player",
+      "cycle": 4,
+      "current": 5,
+      "maximum": 5,
+      "safe_point": "a06_safe",
+      "x": 140,
+      "y": 416,
+      "enemy_health": 3,
+      "enemy_b_health": 3,
+      "active": "habilidade_A_pulo_duplo",
+      "has_a": true,
+      "has_b": true
+    }
+  ],
+  "absorption_results": [
+    {
+      "target": "inimigo_01_A",
+      "accepted": false,
+      "reason": "out_of_range"
+    },
+    {
+      "target": "inimigo_01_A",
+      "accepted": false,
+      "reason": "target_alive"
+    },
+    {
+      "target": "inimigo_01_A",
+      "accepted": true,
+      "reason": "completed",
+      "active": "habilidade_A_pulo_duplo"
+    },
+    {
+      "target": "inimigo_01_A",
+      "accepted": false,
+      "reason": "unavailable"
+    },
+    {
+      "target": "inimigo_02_B",
+      "accepted": true,
+      "reason": "completed",
+      "active": "habilidade_B_investida"
+    },
+    {
+      "target": "inimigo_02_B",
+      "accepted": false,
+      "reason": "unavailable"
+    },
+    {
+      "target": "inimigo_01_A",
+      "accepted": true,
+      "reason": "completed",
+      "active": "habilidade_B_investida"
+    }
+  ],
+  "dash_outcomes": {
+    "wrong_active": 6,
+    "ok": 89,
+    "action_busy": 13,
+    "cooldown": 67,
+    "air_use_spent": 1
+  },
+  "switch_outcomes": {
+    "not_acquired": 2,
+    "action_busy": 16,
+    "ok": 93
+  }
+}

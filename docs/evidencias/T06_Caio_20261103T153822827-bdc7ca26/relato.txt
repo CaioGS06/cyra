@@ -1,0 +1,10 @@
+Relato curto de Lucas (ou executor):
+1. Conseguiu concluir o roteiro? Se não, até qual etapa?
+R: Sim, consegui concluir todas as etapas do roteiro.
+2. Algo visual/de controle diferente do esperado? Etapa/F9 e descrição, ou "nada percebido".
+R: Nada percebido. O estado atual da demo de testes está estável.
+3. Houve interrupção externa, mudança de foco ou erro ao iniciar? Descreva, se houve.
+R: Não houve nenhuma interrupção.
+
+Não é necessário transcrever FPS/memória nem preencher tabelas manualmente.
+Os dados não medem tempo de revisão/correção fora do jogo.

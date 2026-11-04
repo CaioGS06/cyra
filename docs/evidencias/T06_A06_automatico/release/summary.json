@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "protocol": "A03-v2",
+  "machine_label": "Caio",
+  "scenario": "A06",
+  "package_id": "18ee9a8744ec1d4c2391426696c3f1345163c0c6b02ed9a27caceae083dc7811",
+  "exit_code": 0,
+  "collector_complete": true,
+  "invalid_json_lines": 0,
+  "dropped_records": 0,
+  "headless": true,
+  "performance_assessment": "not_applicable_headless",
+  "sample_count": 2,
+  "fps_median": 52.5,
+  "fps_sample_min": 45,
+  "private_memory": {
+    "samples": 2,
+    "first_bytes": 60518400,
+    "last_bytes": 60370944,
+    "max_bytes": 60518400.0,
+    "delta_bytes": -147456
+  },
+  "engine_errors": 0,
+  "engine_warnings": 0,
+  "human_markers": 0,
+  "game_event_counts": {
+    "A05_landing": 1,
+    "A06_room_ready": 1,
+    "A06_uses_restored": 2
+  },
+  "automatic_test_verdict": "not_assigned",
+  "limitations": "FPS agregado, memória do processo e eventos instrumentados. Ausência de erro não comprova aprovação funcional; dados do editor/headless não são benchmark release; sem prova de ausência de vazamento."
+}

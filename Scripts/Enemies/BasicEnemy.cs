@@ -1,6 +1,6 @@
 // ============================================================================
 // PROJETO CYRA — Estudo de Caso de Desenvolvimento Assistido por IA
-// Atividade / Requisito: A05 — RF02
+// Atividade / Requisito: A05/A06 — RF02/RF03
 // Descrição do Módulo: patrulhar, causar contato e permanecer atordoado a zero.
 // Entradas / Sinais Emitidos: ReceiveAttack; Health.Depleted; Stunned.
 // Pontos de Curadoria Humana: piso/parede, contato limitado e atordoamento sem prazo.
@@ -18,6 +18,9 @@ public partial class BasicEnemy : CharacterBody2D
     [Export(PropertyHint.Range, "1,200,1")] public float PatrolSpeed { get; set; } = 55;
     [Export(PropertyHint.Range, "1,300,1")] public float PatrolDistance { get; set; } = 70;
     [Export(PropertyHint.Range, "1,100,1")] public int ContactDamage { get; set; } = 1;
+    [Export] public string AbilityId { get; set; } = "";
+    public bool IsAbsorbed { get; private set; }
+    [Signal] public delegate void AbsorbedEventHandler(string abilityId);
     [Signal] public delegate void StunnedEventHandler();
     public Health Health { get; private set; } = null!;
     public bool IsStunned { get; private set; }
@@ -37,6 +40,8 @@ public partial class BasicEnemy : CharacterBody2D
         _floorAhead = GetNode<RayCast2D>("FloorAhead");
         _visual = GetNode<ColorRect>("Visual");
         _label = GetNode<Label>("StateLabel");
+        AddToGroup("mimicry_targets");
+        if (AbilityId != "") { _label.Text = AbilityId == MimicrySession.A ? "A — pulo duplo" : "B — investida"; _visual.Color = AbilityId == MimicrySession.A ? Colors.Green : Colors.Purple; }
         _originX = Position.X;
         PatrolSpeed = Math.Max(1, PatrolSpeed);
         PatrolDistance = Math.Max(1, PatrolDistance);
@@ -45,6 +50,7 @@ public partial class BasicEnemy : CharacterBody2D
 
     public override void _PhysicsProcess(double delta)
     {
+        if (IsAbsorbed) return;
         Vector2 velocity = Velocity;
         if (!IsOnFloor()) velocity += GetGravity() * (float)delta;
         if (!IsStunned)
@@ -71,7 +77,7 @@ public partial class BasicEnemy : CharacterBody2D
         }
     }
 
-    public bool ReceiveAttack(int amount) => !IsStunned && Health.ApplyDamage(amount, "player_attack");
+    public bool ReceiveAttack(int amount) => !IsAbsorbed && !IsStunned && Health.ApplyDamage(amount, "player_attack");
 
     private void OnDepleted()
     {
@@ -79,11 +85,19 @@ public partial class BasicEnemy : CharacterBody2D
         IsStunned = true;
         Velocity = Vector2.Zero;
         _visual.Color = new Color(0.95f, 0.75f, 0.2f);
-        _label.Text = "Atordoado — sem absorção na A05";
+        _label.Text = AbilityId == "" ? "Atordoado — sem absorção na A05" : (AbilityId == MimicrySession.A ? "A" : "B") + " atordoado — E absorver";
         _contact.SetDeferred(Area2D.PropertyName.Monitoring, false);
         TestRunRecorder.RecordEvent("A05_stunned", new { entity = TechnicalId, previous = "patrol", current = "stunned", health = Health.Current });
         EmitSignal(SignalName.Stunned);
     }
 
+    public bool TryAbsorb()
+    {
+        if (IsAbsorbed || !IsStunned || (AbilityId != MimicrySession.A && AbilityId != MimicrySession.B)) return false;
+        IsAbsorbed = true; Velocity = Vector2.Zero; Hide();
+        _contact.SetDeferred(Area2D.PropertyName.Monitoring, false);
+        SetDeferred(CollisionObject2D.PropertyName.CollisionLayer, 0);
+        EmitSignal(SignalName.Absorbed, AbilityId); return true;
+    }
     public override void _ExitTree() => Health.Depleted -= OnDepleted;
 }

@@ -1,6 +1,6 @@
 // ============================================================================
 // PROJETO CYRA — Estudo de Caso de Desenvolvimento Assistido por IA
-// Atividade / Requisito: A05 — RF01/RF02
+// Atividade / Requisito: A05/A06 — RF01–RF04
 // Descrição do Módulo: entrada, física, ataque curto e proteção de dano do jogador.
 // Entradas / Sinais Emitidos: player_left/right/jump/attack; Died, AttackStarted.
 // Pontos de Curadoria Humana: piso, direção/alcance, alvo único e intervalo de dano.
@@ -27,6 +27,7 @@ public partial class PlayerController : CharacterBody2D
     [Signal] public delegate void AttackStartedEventHandler(int attackId, int direction);
 
     public Health Health { get; private set; } = null!;
+    public PlayerMimicry Mimicry { get; private set; } = null!;
     public bool IsAttacking => _attackRemaining > 0;
     private Area2D _attackArea = null!;
     private CollisionShape2D _attackShape = null!;
@@ -38,6 +39,7 @@ public partial class PlayerController : CharacterBody2D
 
     public override void _Ready()
     {
+        Mimicry = GetNode<PlayerMimicry>("Mimicry");
         Health = GetNode<Health>("Health");
         Health.Depleted += OnDepleted;
         _attackArea = GetNode<Area2D>("AttackArea");
@@ -60,21 +62,36 @@ public partial class PlayerController : CharacterBody2D
         _attackCooldown = Math.Max(0, _attackCooldown - delta);
         _hurtRemaining = Math.Max(0, _hurtRemaining - delta);
         _damageFlash = Math.Max(0, _damageFlash - delta);
-        _visual.Color = _damageFlash > 0 ? new Color(1, 0.25f, 0.25f) : new Color(0.3f, 0.7f, 0.95f);
+        _visual.SelfModulate = _damageFlash > 0 ? new Color(1, 0.25f, 0.25f) : Colors.White;
+        Mimicry.Tick(delta);
+        float commandedDirection = Input.GetAxis("player_left", "player_right");
+        if (commandedDirection != 0 && !Mimicry.Locked) _facing = commandedDirection > 0 ? 1 : -1;
+        bool absorb = Mimicry.Enabled && Input.IsActionJustPressed("player_absorb");
+        bool dash = Mimicry.Enabled && Input.IsActionJustPressed("player_dash");
+        if (absorb) Mimicry.TryAbsorb();
+        else if (dash) Mimicry.TryDash(_facing, IsOnFloor());
+        if (Input.IsActionJustPressed("player_attack") && !absorb && !dash && !Mimicry.Locked && !IsAttacking && _attackCooldown <= 0) BeginAttack();
+        if (Mimicry.Enabled)
+        {
+            if (Input.IsActionJustPressed("player_form_a")) Mimicry.TrySwitch(MimicrySession.A);
+            else if (Input.IsActionJustPressed("player_form_b")) Mimicry.TrySwitch(MimicrySession.B);
+        }
 
         float direction = Input.GetAxis("player_left", "player_right");
-        if (direction != 0) _facing = direction > 0 ? 1 : -1;
+        if (direction != 0 && !Mimicry.Locked) _facing = direction > 0 ? 1 : -1;
         Vector2 velocity = Velocity;
-        velocity.X = direction * Speed;
+        velocity.X = Mimicry.IsDashing ? Mimicry.DashDirection * Mimicry.DashSpeed : Mimicry.IsAbsorbing ? 0 : direction * Speed;
         bool wasOnFloor = IsOnFloor();
         if (!wasOnFloor) velocity += GetGravity() * (float)delta;
-        if (Input.IsActionJustPressed("player_jump") && wasOnFloor)
+        if (Input.IsActionJustPressed("player_jump") && !Mimicry.Locked && (wasOnFloor || Mimicry.TryExtraJump()))
         {
-            velocity.Y = JumpVelocity;
+            velocity.Y = wasOnFloor ? JumpVelocity : Mimicry.ExtraJumpVelocity;
             TestRunRecorder.RecordEvent("A05_jump", new { entity = "player", x = Position.X, y = Position.Y });
         }
         Velocity = velocity;
         MoveAndSlide();
+        if (!IsOnFloor()) Mimicry.MarkAirborneDash();
+        if (!wasOnFloor && IsOnFloor()) Mimicry.Land();
         if (!wasOnFloor && IsOnFloor())
             TestRunRecorder.RecordEvent("A05_landing", new { entity = "player", x = Position.X, y = Position.Y });
 
@@ -87,8 +104,6 @@ public partial class PlayerController : CharacterBody2D
             _motionDirection = motion;
         }
 
-        if (Input.IsActionJustPressed("player_attack") && !IsAttacking && _attackCooldown <= 0)
-            BeginAttack();
         if (IsAttacking)
         {
             ResolveAttack();
@@ -145,6 +160,7 @@ public partial class PlayerController : CharacterBody2D
 
     private void OnDepleted()
     {
+        Mimicry.Cancel();
         _attackRemaining = 0;
         _attackVisual.Visible = false;
         Velocity = Vector2.Zero;

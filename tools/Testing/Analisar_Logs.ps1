@@ -41,7 +41,7 @@ if ($private.Count) {
     $memory = [ordered]@{ samples = $private.Count; first_bytes = $private[0]; last_bytes = $private[-1]; max_bytes = ($private | Measure-Object -Maximum).Maximum; delta_bytes = $private[-1] - $private[0] }
 }
 $gameEvents = [ordered]@{}
-foreach ($group in @($records | Where-Object { $_.kind -match '^(A01|A05)_' } | Group-Object kind)) {
+foreach ($group in @($records | Where-Object { $_.kind -match '^(A01|A05|A06)_' } | Group-Object kind)) {
     $gameEvents[$group.Name] = $group.Count
 }
 Write-JsonFile 'summary.json' ([ordered]@{

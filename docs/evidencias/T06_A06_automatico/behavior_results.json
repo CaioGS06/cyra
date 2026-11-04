@@ -1,0 +1,238 @@
+{
+  "checks": [
+    {
+      "description": "A06 habilita mimetismo",
+      "passed": true
+    },
+    {
+      "description": "processo novo sem aquisicoes",
+      "passed": true
+    },
+    {
+      "description": "troca sem aquisicao rejeitada",
+      "passed": true
+    },
+    {
+      "description": "investida ausente rejeitada",
+      "passed": true
+    },
+    {
+      "description": "salto extra ausente rejeitado",
+      "passed": true
+    },
+    {
+      "description": "alvo vivo rejeitado",
+      "passed": true
+    },
+    {
+      "description": "alvo distante rejeitado",
+      "passed": true
+    },
+    {
+      "description": "absorver A atordoado",
+      "passed": true
+    },
+    {
+      "description": "troca durante absorcao rejeitada",
+      "passed": true
+    },
+    {
+      "description": "repeticao durante absorcao rejeitada",
+      "passed": true
+    },
+    {
+      "description": "A adquirida e equipada",
+      "passed": true
+    },
+    {
+      "description": "alvo removido da disponibilidade",
+      "passed": true
+    },
+    {
+      "description": "alvo absorvido rejeitado",
+      "passed": true
+    },
+    {
+      "description": "absorvido nao recebe dano",
+      "passed": true
+    },
+    {
+      "description": "pulo basico com A",
+      "passed": true
+    },
+    {
+      "description": "segundo pressionamento executa adicional",
+      "passed": true
+    },
+    {
+      "description": "terceiro salto rejeitado",
+      "passed": true
+    },
+    {
+      "description": "pouso restaura adicional",
+      "passed": true
+    },
+    {
+      "description": "jogador morto rejeitado",
+      "passed": true
+    },
+    {
+      "description": "morte com A preserva aquisicao/ativa e restaura vida",
+      "passed": true
+    },
+    {
+      "description": "morte reinicia ambos inimigos",
+      "passed": true
+    },
+    {
+      "description": "B adquirida e equipada via input E",
+      "passed": true
+    },
+    {
+      "description": "troca valida para A",
+      "passed": true
+    },
+    {
+      "description": "consome adicional antes de troca",
+      "passed": true
+    },
+    {
+      "description": "A B A nao recupera adicional",
+      "passed": true
+    },
+    {
+      "description": "investida aerea permitida",
+      "passed": true
+    },
+    {
+      "description": "troca durante investida rejeitada",
+      "passed": true
+    },
+    {
+      "description": "investida consome uso aereo",
+      "passed": true
+    },
+    {
+      "description": "troca apos investida aceita",
+      "passed": true
+    },
+    {
+      "description": "B A B nao restaura investida",
+      "passed": true
+    },
+    {
+      "description": "pouso restaura uso aereo",
+      "passed": true
+    },
+    {
+      "description": "investida solo",
+      "passed": true
+    },
+    {
+      "description": "investida respeita parede",
+      "passed": true
+    },
+    {
+      "description": "intervalo solo respeitado",
+      "passed": true
+    },
+    {
+      "description": "solo permite repetir apos intervalo",
+      "passed": true
+    },
+    {
+      "description": "troca durante ataque rejeitada",
+      "passed": true
+    },
+    {
+      "description": "reabsorver A reiniciado",
+      "passed": true
+    },
+    {
+      "description": "reabsorcao nao equipa/cura/renova usos",
+      "passed": true
+    },
+    {
+      "description": "indicador segue estado B",
+      "passed": true
+    },
+    {
+      "description": "cor tecnica B sincronizada",
+      "passed": true
+    },
+    {
+      "description": "morte com B preserva ambas e ativa",
+      "passed": true
+    },
+    {
+      "description": "retorno restaura vida/usos",
+      "passed": true
+    },
+    {
+      "description": "J + 2 rejeita troca e nao a enfileira",
+      "passed": true
+    },
+    {
+      "description": "novo pressionamento consome extra",
+      "passed": true
+    },
+    {
+      "description": "segurar nao repete impulso adicional",
+      "passed": true
+    },
+    {
+      "description": "investida no ar em fixture alta",
+      "passed": true
+    },
+    {
+      "description": "uso aereo continua gasto apos intervalo e troca",
+      "passed": true
+    },
+    {
+      "description": "morte com ambas adquiridas e A ativa preserva estado",
+      "passed": true
+    },
+    {
+      "description": "HUD fixo sincronizado no retorno",
+      "passed": true
+    },
+    {
+      "description": "dois candidatos elegiveis iniciam absorcao",
+      "passed": true
+    },
+    {
+      "description": "empate por ID ordinal escolhe fixture_a",
+      "passed": true
+    },
+    {
+      "description": "candidato restante selecionado",
+      "passed": true
+    },
+    {
+      "description": "afastar durante absorcao rejeita conclusao",
+      "passed": true
+    },
+    {
+      "description": "B ativa nao concede salto adicional",
+      "passed": true
+    },
+    {
+      "description": "investida para verificar dano normal",
+      "passed": true
+    },
+    {
+      "description": "investida nao concede invulnerabilidade",
+      "passed": true
+    },
+    {
+      "description": "R reinicia mundo preservando aquisicoes",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "fixtures": true,
+  "headless": true,
+  "human_review": "pending",
+  "passed": 57,
+  "simulated_input": true
+}

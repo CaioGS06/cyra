@@ -1,11 +1,16 @@
 ﻿param(
     [string]$Executavel = "",
     [ValidateSet('Lucas','Caio','Victor','NaoInformada')][string]$Maquina = 'NaoInformada',
-    [ValidateSet('A01','A05','DEMO')][string]$Cenario = 'A05',
+    [ValidateSet('A01','A05','A06','DEMO')][string]$Cenario = 'A06',
     [switch]$VerificacaoSemJanela,
     [switch]$PerguntarMaquina
 )
 $ErrorActionPreference = 'Stop'
+$localDescriptor = Join-Path $PSScriptRoot 'test-package.json'
+if (-not $PSBoundParameters.ContainsKey('Cenario') -and (Test-Path -LiteralPath $localDescriptor)) {
+    $Cenario = (Get-Content -LiteralPath $localDescriptor -Raw -Encoding UTF8 | ConvertFrom-Json).scenario
+}
+
 
 if ($PerguntarMaquina -and -not $PSBoundParameters.ContainsKey('Maquina')) {
     Write-Host 'Computador usado neste teste: 1 - Lucas; 2 - Caio; 3 - Victor; 0 - outro/nao informado'
@@ -23,12 +28,12 @@ if ($PerguntarMaquina -and -not $PSBoundParameters.ContainsKey('Maquina')) {
 if (-not $Executavel) {
     $Executavel = Join-Path $PSScriptRoot 'Cyra.exe'
     if (-not (Test-Path -LiteralPath $Executavel -PathType Leaf)) {
-        $relativePackage = if ($Cenario -eq 'A05') { '..\..\build\a05-test\Cyra.exe' } else { '..\..\build\a03-test\Cyra.exe' }
+        $relativePackage = if ($Cenario -eq 'A06') { '..\..\build\a06-test\Cyra.exe' } elseif ($Cenario -eq 'A05') { '..\..\build\a05-test\Cyra.exe' } else { '..\..\build\a03-test\Cyra.exe' }
         $Executavel = Join-Path $PSScriptRoot $relativePackage
     }
 }
 if (-not (Test-Path -LiteralPath $Executavel -PathType Leaf)) {
-    throw 'Pacote atualizado nao encontrado. Para A05 use build/a05-test; para A01 use build/a03-test ou informe -Executavel. Copie as ferramentas atuais junto do pacote completo.'
+    throw 'Pacote atualizado nao encontrado. Para A06 use build/a06-test; para A05 use build/a05-test; para A01 use build/a03-test ou informe -Executavel. Copie as ferramentas atuais junto do pacote completo.'
 }
 $gamePath = (Resolve-Path -LiteralPath $Executavel).Path
 $packagePath = Split-Path -Parent $gamePath
@@ -37,8 +42,8 @@ if (Test-Path -LiteralPath $descriptorPath -PathType Leaf) {
     $descriptor = Get-Content -LiteralPath $descriptorPath -Raw -Encoding UTF8 | ConvertFrom-Json
     if ($descriptor.scenario -ne $Cenario) { throw ('Cenario solicitado difere do pacote: ' + $Cenario + ' / ' + $descriptor.scenario) }
 }
-elseif ($Cenario -eq 'A05') {
-    throw 'Pacote A05 sem test-package.json. Use a exportacao A05 preparada; nao rotule um pacote A01 como A05.'
+elseif ($Cenario -in @('A05','A06')) {
+    throw 'Pacote A05/A06 sem test-package.json. Use a exportacao preparada do cenario correto.'
 }
 $runId = (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssfffZ') + '-' + [Guid]::NewGuid().ToString('N').Substring(0,8)
 $resultsPath = Join-Path $packagePath ('TestResults\' + $runId)

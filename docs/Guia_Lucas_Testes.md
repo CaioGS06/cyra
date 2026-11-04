@@ -1,3 +1,42 @@
+# Guia atual — A06 / T06 (03/11/2026)
+
+Entrega para curadoria humana, RF04 parcial por falta de sprites humanos. Usar **build/a06-test completo**; abrir Executar_Teste.cmd e selecionar a máquina real. Nenhuma alteração de política de segurança é necessária ou solicitada: se houver bloqueio, enviar a mensagem ao responsável. Fechar o processo e abrir novamente começa sem aquisições. R reinicia o mundo/vida/usos mas mantém aquisições/ativa nesta execução. Sem save.
+
+Controles: A/D/setas andar; Espaço salto (novo toque no ar para A); J ataque; E absorção; K investida; 1 A; 2 B; R reinício; F9 marcador. Aquisição nova equipa imediatamente. Reabsorção mantém a ativa atual. Base azul, A verde, B roxo; dano causa flash vermelho temporário. Aparência técnica não equivale a sprites humanos.
+
+Após cada etapa, F9 uma vez; marca não comprova conclusão. Se faltar marca ou ocorrer morte inesperada, explicar no relato e retomar quando possível. Não preencher dados ausentes por suposição. Não há séries longas ou transcrição de métricas.
+
+| Etapa | Ação | Esperado e momento da marca |
+|---|---|---|
+| 1 | Abra uma nova execução e espere no piso; tente 1, 2 e K. | Base, sem adquiridas, nenhuma habilidade executada; F9. |
+| 2 | Ande e faça um salto com novo toque no ar. | Movimento A05 preservado, sem salto extra na base; F9 ao pousar. |
+| 3 | Longe de A, pressione E; aproxime de A vivo e pressione E. | Sem absorção em ambos os casos; F9 afastado. |
+| 4 | Ataque A com J em toques espaçados até atordoar (três acertos). Aguarde/tente tocar. | Zero vida, sem dano posterior/recuperação; F9. |
+| 5 | Próximo de A, pressione E, depois E novamente. | A desaparece, aquisição única/equipamento A, sem cura; F9. |
+| 6 | Salte, solte, pressione Espaço no ar e tente mais uma vez. | Um extra; segurar não repete; pouso recompõe; F9 no piso. |
+| 7 | Encoste no B vivo sem atacar até morrer. | Retorno 5/5, A adquirida/ativa, ambos inimigos vivos; F9. Se B se afastar, acompanhe. |
+| 8 | Vá até B, atordoe com J e absorva com E. | A e B adquiridas, B equipada; F9. |
+| 9 | No solo use K, tente logo de novo, aguarde cerca de um segundo e repita apontando para a parede. | Curta investida na direção inicial, intervalo respeitado, parede sólida; F9 após terminar. |
+| 10 | Com B, salte e use K; ainda no ar tente K novamente. | Um uso aéreo; pouso recompõe; F9. |
+| 11 | Com 1, salte e use extra; no ar pressione 2 e 1 e tente novo extra. | Trocas não recuperam extra; F9 ao pousar. |
+| 12 | Com 2, salte/use K; após terminar, ainda no ar tente 1, 2, K. | Sem novo uso aéreo; se pousar antes, relate a condição sem afirmar o negativo testado; F9. |
+| 13 | No solo pressione J e logo 1; com B ativa, K e logo 1. | Troca rejeitada enquanto ação em curso, sem troca automática depois; F9. |
+| 14 | Pressione R; escolha B com 2. Receba um dano de A, afaste, atordoe A e reabsorva. Tente 1 durante os 0,20 s de absorção. | R mantém aquisições; reabsorver A não cura nem muda B ativa; troca durante absorção rejeitada (janela curta, complementar automático); F9. |
+| 15 | Com B ativa, deixe um inimigo vivo causar morte. Se ambos absorvidos, R os restaura. | Ambas aquisições/B ativa mantidas, vida máxima e inimigos reiniciados; F9. |
+| 16 | Escolha A e repita uma morte. | Ambas aquisições/A ativa mantidas; F9 e feche normalmente. |
+
+O teste de reabsorção com usos aéreos gastos e os comandos simultâneos têm fixtures automáticas adicionais; se não conseguir fazê-los manualmente, registre a limitação. Para conferir empate de alvos, a IA usa fixture, sem pedir edição da cena ao executor. Não reivindicar cobertura humana pelo teste automático.
+
+Depois, preencher somente TestResults/<sessão>/relato.txt: concluiu/até onde, ocorrências/etapa, interrupções ou bloqueio do iniciador. Enviar a pasta inteira. A IA organiza logs; a aprovação e leitura do código são humanas e devem identificar quem as realizou. Capturas úteis a produzir: A adquirida, B ativa/HUD, antes/depois da morte. Sem capturas alegadas nesta entrega.
+
+Preparação pelo desenvolvedor: exportar preset A06 Windows Desktop para build/a06-test/Cyra.exe; executar tools/Testing/Preparar_Pacote_A06.ps1. O iniciador atual reconhece A01/A05/A06 e recusa descritor divergente; não muda a cena do release. Fora de pacote, o cenário padrão é A06. Usar -Cenario A05 para regressão com pacote próprio. Eventos A05 compartilhados cobrem movimento/combate/vida; eventos A06 cobrem absorção, aquisições, trocas, usos e retorno. Resumo descritivo sem aprovação automática.
+
+---
+
+## Guia anterior preservado como referência A05/A01
+
+O conteúdo abaixo descreve A05/A01 e não é o roteiro atual A06. As evidências e aprovações anteriores continuam nos respectivos registros; A05/Lucas teve 11 F9 e nenhum salto, aceitos com ressalvas por Caio; Lucas não leu o código. A03/Lucas teve cinco marcas e nenhum salto.
+
 # Guia curto de testes — Lucas
 
 Coleta A03-v2; roteiro A05/D06, atualizado em 30/10/2026. Referência: Lucas/Ryzen 7 8700G/Radeon 780M/32 GB/Windows 11. O executor joga, marca F9 e relata ocorrências; a aprovação permanece humana. A execução anterior de Lucas/A03 teve cinco F9 e nenhum pulo registrado, aceita por Caio com ressalvas; este roteiro não corrige retroativamente essa lacuna.

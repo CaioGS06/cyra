@@ -1,6 +1,6 @@
 // ============================================================================
 // PROJETO CYRA — Estudo de Caso de Desenvolvimento Assistido por IA
-// Atividade / Requisito: A03/A05 — coleta local para curadoria (RNF01/RNF04)
+// Atividade / Requisito: A03/A05/A06 — coleta local para curadoria (RNF01/RNF04)
 // Descrição do Módulo: registrar sessões optativas de teste, sem decidir aprovação.
 // Entradas / Sinais Emitidos: --cyra-test; F9 marca etapa; notificações de foco.
 // Pontos de Curadoria Humana: modo comum sem logs; modo teste, arquivos e falhas.
@@ -76,7 +76,9 @@ public partial class TestRunRecorder : Node
                     "A01_scene_ready", "A01_input_first", "A01_landing", "A01_jump", "A01_ui_signal", "A01_trigger",
                     "A05_room_ready", "A05_movement", "A05_jump", "A05_landing", "A05_attack",
                     "A05_damage_applied", "A05_damage_received", "A05_health_changed", "A05_stunned",
-                    "A05_death", "A05_safe_return", "A05_room_reset"
+                    "A05_death", "A05_safe_return", "A05_room_reset",
+                    "A06_room_ready", "A06_safe_return", "A06_room_reset", "A06_absorb_attempt", "A06_absorb_result",
+                    "A06_acquired", "A06_switch", "A06_extra_jump", "A06_dash", "A06_air_dash_consumed", "A06_uses_restored"
                 }
             });
             _engineLogger = new TestEngineLogger { Owner = this };

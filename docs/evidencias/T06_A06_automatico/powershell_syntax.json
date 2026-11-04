@@ -1,0 +1,14 @@
+[
+  {
+    "file": "tools/Testing/Executar_Teste.ps1",
+    "errors": 0
+  },
+  {
+    "file": "tools/Testing/Analisar_Logs.ps1",
+    "errors": 0
+  },
+  {
+    "file": "tools/Testing/Preparar_Pacote_A06.ps1",
+    "errors": 0
+  }
+]

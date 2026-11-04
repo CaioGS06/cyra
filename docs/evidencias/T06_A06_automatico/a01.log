@@ -1,0 +1,21 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+A01: script do ator anexado; _Ready executado.
+A01: controlador pronto; sinais conectados por C#.
+PASS: texto inicial exato
+A01: TesteConcluido recebido: Botão acionado.
+PASS: Pressed emite o sinal personalizado uma vez
+PASS: sinal personalizado atualiza Label preservando título
+PASS: botão não declara entrada inexistente
+PASS: gravidade encontra o StaticBody2D
+PASS: ator repousa sobre o piso sem atravessar
+PASS: UI confirma colisão real
+A01: TesteConcluido recebido: Área de gatilho acionada.
+PASS: entrada direcional move o ator
+PASS: BodyEntered emite o sinal personalizado uma vez
+PASS: gatilho atualiza confirmação
+PASS: UI confirma entrada e sinal reais
+PASS: ui_accept faz o ator pular
+PASS: ator retorna ao piso após pulo
+PASS: entrada para esquerda funciona
+A01_RESULT: 0 falhas
