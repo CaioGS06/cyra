@@ -1,0 +1,10 @@
+Relato curto de Lucas (ou executor):
+1. Conseguiu concluir o roteiro? Se não, até qual etapa?
+R: Sim, perfeitamente.
+2. Algo visual/de controle diferente do esperado? Etapa/F9 e descrição, ou "nada percebido".
+R: Nada diferente do esperado. Apenas inconsistências na forma que os sprites foram criados, mas nada na forma como foram implementados.
+3. Houve interrupção externa, mudança de foco ou erro ao iniciar? Descreva, se houve.
+R: Nenhum, a demo foi iniciada sem problemas.
+
+Não é necessário transcrever FPS/memória nem preencher tabelas manualmente.
+Os dados não medem tempo de revisão/correção fora do jogo.

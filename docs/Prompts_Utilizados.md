@@ -959,3 +959,11 @@ Ainda não commitei o T06, mas Victor enviou-me os sprites que fez até então. 
 ~~~~
 
 D08 integra as folhas de Victor na sala A06 por SpriteFrames e AnimatedSprite2D. As dez cópias de jogo conferem byte a byte com as folhas recebidas. A apresentação cobre base, forma A e inimigo A. O ensaio automático passou 67 verificações e a exportação Windows carregou e completou a coleta. A revisão visual humana da integração está pendente. [Arquivos e decisões](A06_Sprites_Victor.md).
+
+## P19 — 16/11/2026 — revisão visual da A06 com sprites
+
+~~~~text
+Concluí as 8 etapas da revisão visual com F9 e preenchi o relato. Pode conferir a sessão mais recente em `build/a06-sprites-test/TestResults`, atualizar o T06 e a documentação com os resultados e me dizer se falta algo antes do commit? O Lucas também me enviou os seus testes, e eles estão na pasta `build/a06-sprites-test-lucas`.
+~~~~
+
+Caio e Lucas concluíram as oito etapas com F9 em 16/11. Caio apontou inconsistências nos desenhos, sem problema de implementação percebido. Lucas observou um aparente corte na cintura do capanga ao andar. A causa segue em aberto. A IA conferiu os 193 arquivos por sessão e preservou as duas execuções marcadas e a sessão anterior de Lucas com relato em branco. O commit da integração é `0eeac22`. A revisão visual documentada está pronta para commit, com a ocorrência em acompanhamento e a arte B ainda pendente. [Relatos e análise](evidencias/T06_A06_revisao_visual_Caio_Lucas.md).

@@ -70,4 +70,6 @@ Após a entrega dos sprites, Caio propõe discutir com a equipe se a absorção 
 
 Lucas relatou concluir o roteiro em 05/11, com dificuldade nas trocas no ar. Os logs registram 15 F9 e confirmam as duas aquisições, salto extra, investidas e três retornos seguros. A implementação está integrada em a31fac0. O registro de P17 inclui a ocorrência de ExecutionPolicy e a abertura direta testada localmente. [Análise e evidências](evidencias/T06_A06_validacao_Lucas.md).
 
-Victor entregou 11 folhas por meio de Caio. P18/D08 integra sprites da base, forma A e inimigo A na mesma sala A06. RF04 permanece parcial enquanto faltar a arte B e a conferência visual. [Integração dos sprites](A06_Sprites_Victor.md).
+Victor entregou 11 folhas por meio de Caio. P18/D08 integra sprites da base, forma A e inimigo A na mesma sala A06. RF04 permanece parcial enquanto faltar a arte B. A conferência visual de Caio e Lucas está registrada em P19. [Integração dos sprites](A06_Sprites_Victor.md).
+
+**Revisão visual D08, 16/11.** Caio e Lucas concluíram as oito etapas com F9 em 16/11. Caio apontou inconsistências nos desenhos, sem problema de implementação percebido. Lucas observou um aparente corte na cintura do capanga ao andar. A causa segue em aberto. [Resultados e evidências](evidencias/T06_A06_revisao_visual_Caio_Lucas.md).

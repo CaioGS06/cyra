@@ -28,10 +28,14 @@ A associação das folhas à forma e ao estado segue os nomes e a aparência. A 
 4. Absorva B, alterne 1 e 2 e reinicie com R. Confira a aparência correspondente à forma ativa antes e depois da volta ao ponto seguro.
 5. Relate cortes, pés desalinhados, orientação, ritmo e pose de atordoamento. Vincule a observação ao pacote com sprites.
 
-O [teste funcional de Lucas em T06](evidencias/T06_A06_validacao_Lucas.md) corresponde ao pacote anterior sem arte. A integração visual parcial tem registro próprio em D08 e aguarda revisão humana. RF04 segue parcial enquanto faltar a arte B e a conferência visual.
+O [teste funcional de Lucas em T06](evidencias/T06_A06_validacao_Lucas.md) corresponde ao pacote anterior sem arte. A integração visual parcial tem registro D08. Caio e Lucas concluíram a revisão visual em P19. RF04 segue parcial enquanto faltar a arte B.
 
 ## Verificações automáticas de 16/11
 
 A compilação passou com zero erros e avisos. O Godot importou os dez PNGs de jogo com compressão sem perdas e exportou a cena A06 com os três recursos SpriteFrames. O ensaio sem janela passou 67 verificações, incluindo a regressão A06 e dez verificações adicionais de sprites. A exportação também abriu pelo iniciador e completou a coleta sem erros ou avisos. O primeiro ensaio de importação restrito encontrou erro de acesso à configuração local do editor. A importação com acesso à configuração concluiu. [Comportamento e estados](evidencias/T06_A06_sprites_automatico/behavior_results.json) e [coleta da exportação](evidencias/T06_A06_sprites_automatico/summary.json).
 
-A avaliação em janela do alinhamento, direção, ritmo e pose provisória de atordoamento cabe à próxima revisão de Caio, Lucas e Victor. As verificações automáticas foram feitas no ambiente de Caio.
+A avaliação em janela de Caio e Lucas está registrada abaixo. A avaliação de Victor ainda não foi informada. As verificações automáticas foram feitas no ambiente de Caio.
+
+## Revisão visual de 16/11 — P19
+
+Caio e Lucas concluíram as oito etapas com F9 em 16/11. Caio apontou inconsistências nos desenhos, sem problema de implementação percebido. Lucas observou um aparente corte na cintura do capanga ao andar. A causa segue em aberto. A observação serve de referência para conferir a patrulha quando houver uma captura ou vídeo. As duas execuções têm coleta completa e oito marcas F9. [Resultados e evidências](evidencias/T06_A06_revisao_visual_Caio_Lucas.md).

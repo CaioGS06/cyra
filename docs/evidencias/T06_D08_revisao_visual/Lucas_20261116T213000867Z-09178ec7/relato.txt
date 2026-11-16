@@ -1,0 +1,10 @@
+Relato curto de Lucas (ou executor):
+1. Conseguiu concluir o roteiro? Se não, até qual etapa?
+R: Foi possível rodar todas as partes sem problema.
+2. Algo visual/de controle diferente do esperado? Etapa/F9 e descrição, ou "nada percebido".
+R: O sprite do capanga parece estar recortando na cintura ao andar
+3. Houve interrupção externa, mudança de foco ou erro ao iniciar? Descreva, se houve.
+R: Não houveram problemas desse tipo
+
+Não é necessário transcrever FPS/memória nem preencher tabelas manualmente.
+Os dados não medem tempo de revisão/correção fora do jogo.

@@ -1,0 +1,11 @@
+{
+    "schema":  1,
+    "machine_label":  "Lucas",
+    "scenario":  "A06",
+    "protocol":  "A03-v2",
+    "package_id":  "cbdffb739507183c673d1f941e2164a1a80bf6d3c3b650552d6f2b413bbcdabd",
+    "started_utc":  "2026-11-16T21:27:09.6410208Z",
+    "ended_utc":  "2026-11-16T21:28:41.9611011Z",
+    "status":  "process_exited",
+    "exit_code":  0
+}
