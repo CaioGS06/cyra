@@ -1,0 +1,10 @@
+Relato curto de Lucas (ou executor):
+1. Conseguiu concluir o roteiro? Se não, até qual etapa?
+R: Foi possível concluir o roteiro completamente, só tendo uma leve dificuldade na troca e teste de habilidades em ar pelo pulo de curto tempo, fora isso, sem problemas.
+2. Algo visual/de controle diferente do esperado? Etapa/F9 e descrição, ou "nada percebido".
+R: Nada percebido
+3. Houve interrupção externa, mudança de foco ou erro ao iniciar? Descreva, se houve.
+R: Sim, o mesmo problema de não conseguir rodar o script sem mexer nas configurações de ExecutionPolicy
+
+Não é necessário transcrever FPS/memória nem preencher tabelas manualmente.
+Os dados não medem tempo de revisão/correção fora do jogo.

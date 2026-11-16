@@ -1,6 +1,6 @@
 # T06 — A06 / C-RF03 e C-RF04
 
-Preparado pela IA em 03/11/2026, D07/P14; base 4253d7c. **Validação funcional de Caio concluída em 03/11/2026 e registrada em P16.** Execução de Lucas ainda sem relato. RF04 parcial: só representação técnica, sem recursos humanos disponíveis. T03 permanece alias histórico da revisão A03; T05 não foi reaberto.
+Preparado pela IA em 03/11/2026, D07/P14; base 4253d7c. **Validação funcional de Caio concluída em 03/11/2026 e registrada em P16.** Lucas executou em 05/11 e a sessão foi analisada em P17. RF04 parcial: só representação técnica, sem recursos humanos disponíveis. T03 permanece alias histórico da revisão A03; T05 não foi reaberto.
 
 ## Resultados automáticos separados
 
@@ -27,8 +27,8 @@ Seguir [guia atual A06](../Guia_Lucas_Testes.md), 16 etapas pequenas, F9 e relat
 | Achados, decisão, correção (ou nenhuma necessária) e autor real | Caio leu o código e visualizou as cenas, sem correções necessárias. Ajustes futuros de absorção/investida serão discutidos após os sprites. |
 | Reteste/evidência quando necessário | [Relato e evidências de Caio](T06_A06_validacao_Caio.md). Nenhuma correção motivou reteste. |
 | Esforço de aprendizagem/revisão/correção/teste | 37 min informados para leitura do roteiro e testes. Tempo específico de revisão do código/cenas não discriminado. Coletor 674,298 s, registrado separadamente. |
-| Situação humana e limites aceitos explicitamente | Validação funcional de Caio concluída. RF04 parcial, aguardando sprites humanos. Lucas ainda sem execução informada. |
-| Commit integrado após curadoria | Pendente; nenhum commit automático |
+| Situação humana e limites aceitos explicitamente | Validação de Caio concluída em P16 e teste funcional de Lucas registrado em P17. RF04 parcial, aguardando integração e conferência dos sprites humanos. |
+| Commit integrado após curadoria | Implementação A06 integrada em a31fac0. |
 
 Capturas sugeridas, **não produzidas**: T06_A06_A_adquirida.png, T06_A06_B_ativa.png, T06_A06_antes_morte.png e T06_A06_retorno.png; identificar executor/versão. Enviar sessão inteira e relato; leitura de código deve ser confirmada separadamente de jogar. Caio confirmou execução e leitura do código/cenas. A participação de Lucas fica para registro próprio.
 
@@ -40,4 +40,14 @@ Iniciar pelo CMD de build/a06-test e seguir as 16 etapas do guia. R preserva aqu
 
 ## Validação de Caio — P16, análise em 04/11/2026
 
-[Validação e evidências preservadas](T06_A06_validacao_Caio.md). Caio testou em 03/11, concluiu as 16 etapas, leu código e visualizou cenas. Relatou 37 min para leitura do roteiro e execução, sem necessidade de correções. Os parâmetros atuais ficam aceitos para o roteiro. Caio propôs discutir com a equipe, após a entrega dos sprites, uma duração de absorção adequada aos quadros e uma investida que preserve a altura durante a ação e retome a gravidade ao terminar. RF04 aguarda integração visual humana. Execução de Lucas ainda sem relato.
+[Validação e evidências preservadas](T06_A06_validacao_Caio.md). Caio testou em 03/11, concluiu as 16 etapas, leu código e visualizou cenas. Relatou 37 min para leitura do roteiro e execução, sem necessidade de correções. Os parâmetros atuais ficam aceitos para o roteiro. Caio propôs discutir com a equipe, após a entrega dos sprites, uma duração de absorção adequada aos quadros e uma investida que preserve a altura durante a ação e retome a gravidade ao terminar. RF04 aguarda integração visual humana. O complemento P17 registra a execução posterior de Lucas.
+
+## Execução de Lucas e situação da etapa — P17
+
+Lucas executou o mesmo pacote de Caio em 05/11/2026. Relatou conclusão com leve dificuldade nos testes de troca no ar. A coleta teve 434 amostras e 15 marcas F9, duas aquisições, 15 saltos adicionais, 23 investidas aceitas e três retornos seguros, sem erros ou avisos registrados no jogo. Uma marca ficou ausente e a rejeição por uso aéreo já gasto foi observada em Caio, sem confirmação nos registros de Lucas. Tempo humano e leitura de código por Lucas não informados. [Relato, logs e diagnóstico do iniciador](T06_A06_validacao_Lucas.md).
+
+Validação funcional da A06 registrada em Caio e Lucas, com as respectivas coberturas. A entrega de Victor chegou em P18. Na versão com sprites, falta a arte da forma B e do inimigo B e a conferência visual das trocas. O bloqueio inicial do PowerShell foi documentado com alternativa de abertura direta para os próximos testes.
+
+## Integração visual parcial — D08/P18, 16/11/2026
+
+A execução de Lucas é do pacote funcional anterior. A versão com arte integra Cyra base, forma A e inimigo A, com forma B e inimigo B provisórios. Conferir em partida nova movimento/direção, salto e queda, absorção, troca A/B e retorno depois de R/morte. Esperado: sprites correspondem ao estado da Cyra e do inimigo A, com os pés alinhados e cadência legível. **Resultado visual e situação do reteste humano: pendentes.** Sugestões de evidência: `T06_D08_base_A.png` e `T06_D08_atordoamento.png`. [Roteiro e escala](../A06_Sprites_Victor.md) · [Verificações automatizadas](T06_A06_sprites_automatico/behavior_results.json).

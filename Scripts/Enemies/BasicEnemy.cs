@@ -19,6 +19,7 @@ public partial class BasicEnemy : CharacterBody2D
     [Export(PropertyHint.Range, "1,300,1")] public float PatrolDistance { get; set; } = 70;
     [Export(PropertyHint.Range, "1,100,1")] public int ContactDamage { get; set; } = 1;
     [Export] public string AbilityId { get; set; } = "";
+    [Export] public SpriteFrames? HumanFrames { get; set; }
     public bool IsAbsorbed { get; private set; }
     [Signal] public delegate void AbsorbedEventHandler(string abilityId);
     [Signal] public delegate void StunnedEventHandler();
@@ -27,6 +28,7 @@ public partial class BasicEnemy : CharacterBody2D
     private Area2D _contact = null!;
     private RayCast2D _floorAhead = null!;
     private ColorRect _visual = null!;
+    private AnimatedSprite2D _sprite = null!;
     private Label _label = null!;
     private float _originX;
     private int _direction = -1;
@@ -39,6 +41,15 @@ public partial class BasicEnemy : CharacterBody2D
         _contact = GetNode<Area2D>("ContactArea");
         _floorAhead = GetNode<RayCast2D>("FloorAhead");
         _visual = GetNode<ColorRect>("Visual");
+        _sprite = GetNode<AnimatedSprite2D>("HumanSprite");
+        if (HumanFrames != null)
+        {
+            _sprite.SpriteFrames = HumanFrames;
+            _sprite.FlipH = _direction < 0;
+            _sprite.Show();
+            _sprite.Play("walk");
+            _visual.Hide();
+        }
         _label = GetNode<Label>("StateLabel");
         AddToGroup("mimicry_targets");
         if (AbilityId != "") { _label.Text = AbilityId == MimicrySession.A ? "A — pulo duplo" : "B — investida"; _visual.Color = AbilityId == MimicrySession.A ? Colors.Green : Colors.Purple; }
@@ -65,6 +76,7 @@ public partial class BasicEnemy : CharacterBody2D
         velocity.X = IsStunned ? 0 : _direction * PatrolSpeed;
         Velocity = velocity;
         MoveAndSlide();
+        if (_sprite.Visible) _sprite.FlipH = _direction < 0;
         if (IsStunned) return;
         foreach (Node2D body in _contact.GetOverlappingBodies())
         {
@@ -85,6 +97,7 @@ public partial class BasicEnemy : CharacterBody2D
         IsStunned = true;
         Velocity = Vector2.Zero;
         _visual.Color = new Color(0.95f, 0.75f, 0.2f);
+        if (_sprite.Visible) _sprite.Play("stunned");
         _label.Text = AbilityId == "" ? "Atordoado — sem absorção na A05" : (AbilityId == MimicrySession.A ? "A" : "B") + " atordoado — E absorver";
         _contact.SetDeferred(Area2D.PropertyName.Monitoring, false);
         TestRunRecorder.RecordEvent("A05_stunned", new { entity = TechnicalId, previous = "patrol", current = "stunned", health = Health.Current });

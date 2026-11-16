@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Test/A06RoomController.cs" id="1"]
 [ext_resource type="PackedScene" path="res://Scenes/Entities/Player.tscn" id="2"]
 [ext_resource type="PackedScene" path="res://Scenes/Entities/BasicEnemy.tscn" id="3"]
 [ext_resource type="Script" path="res://Scripts/Test/HealthIndicator.cs" id="4"]
+[ext_resource type="SpriteFrames" path="res://Assets/Sprites/cyra_base/frames.tres" id="5"]
+[ext_resource type="SpriteFrames" path="res://Assets/Sprites/cyra_a/frames.tres" id="6"]
+[ext_resource type="SpriteFrames" path="res://Assets/Sprites/inimigo_a/frames.tres" id="7"]
 
 [sub_resource type="RectangleShape2D" id="FloorShape"]
 size = Vector2(960, 40)
@@ -78,6 +81,7 @@ position = Vector2(140, 370)
 [node name="Enemy" parent="." instance=ExtResource("3")]
 TechnicalId = "inimigo_01_A"
 AbilityId = "habilidade_A_pulo_duplo"
+HumanFrames = ExtResource("7")
 PatrolDistance = 35.0
 position = Vector2(420, 416)
 
@@ -129,6 +133,10 @@ text = "Reiniciar sala (R)"
 
 [node name="Mimicry" parent="Player" index="4"]
 Enabled = true
+
+[node name="Presentation" parent="Player" index="6"]
+BaseFrames = ExtResource("5")
+FormAFrames = ExtResource("6")
 
 [node name="EnemyB" parent="." instance=ExtResource("3")]
 position = Vector2(760, 416)

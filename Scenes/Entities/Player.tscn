@@ -63,3 +63,9 @@ mouse_filter = 2
 
 [node name="Presentation" type="Node" parent="."]
 script = ExtResource("4")
+
+[node name="HumanSprite" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(0, -1)
+scale = Vector2(0.1, 0.1)

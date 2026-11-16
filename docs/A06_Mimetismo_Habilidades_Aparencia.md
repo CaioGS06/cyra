@@ -62,6 +62,12 @@ Arquivos da entrega estão listados no [manifesto D07](saidas_originais/D07_SHA2
 
 ## Validação de Caio e propostas futuras — P16
 
-Caio concluiu as 16 etapas em 03/11/2026, leu os códigos e visualizou as cenas. A revisão ficou sem correções. Informou 37 min para leitura do roteiro e testes. [Validação e logs](evidencias/T06_A06_validacao_Caio.md). O comportamento atual foi aceito para esta fase. O teste de Lucas ainda aguarda relato e RF04 permanece parcial até a arte humana.
+Caio concluiu as 16 etapas em 03/11/2026, leu os códigos e visualizou as cenas. A revisão ficou sem correções. Informou 37 min para leitura do roteiro e testes. [Validação e logs](evidencias/T06_A06_validacao_Caio.md). O comportamento atual foi aceito para esta fase. O teste de Lucas foi registrado em P17 e RF04 permanece parcial até a integração e a conferência da arte humana.
 
 Após a entrega dos sprites, Caio propõe discutir com a equipe se a absorção deve durar mais, conforme os quadros da animação, e se a investida deve manter a altura durante a ação e retomar a gravidade ao terminar, tomando Hollow Knight como referência criativa. Outros ajustes ficam para essa discussão. São propostas para uma revisão futura dos parâmetros, separadas do estado validado em P16.
+
+## Execução de Lucas — P17
+
+Lucas relatou concluir o roteiro em 05/11, com dificuldade nas trocas no ar. Os logs registram 15 F9 e confirmam as duas aquisições, salto extra, investidas e três retornos seguros. A implementação está integrada em a31fac0. O registro de P17 inclui a ocorrência de ExecutionPolicy e a abertura direta testada localmente. [Análise e evidências](evidencias/T06_A06_validacao_Lucas.md).
+
+Victor entregou 11 folhas por meio de Caio. P18/D08 integra sprites da base, forma A e inimigo A na mesma sala A06. RF04 permanece parcial enquanto faltar a arte B e a conferência visual. [Integração dos sprites](A06_Sprites_Victor.md).

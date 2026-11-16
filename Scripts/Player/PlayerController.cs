@@ -29,6 +29,7 @@ public partial class PlayerController : CharacterBody2D
     public Health Health { get; private set; } = null!;
     public PlayerMimicry Mimicry { get; private set; } = null!;
     public bool IsAttacking => _attackRemaining > 0;
+    public int FacingDirection => _facing;
     private Area2D _attackArea = null!;
     private CollisionShape2D _attackShape = null!;
     private ColorRect _attackVisual = null!;

@@ -1,12 +1,13 @@
 # Cyra — estado atual A06
 
-A06 implementada para curadoria em 03/11/2026, D07/P14/T06; Caio concluiu a revisão de código/cenas e as 16 etapas em P16. Teste de Lucas ainda sem relato. RF03 validado por Caio em sala técnica. **RF04 parcial**, sem sprites/animações humanos disponíveis. A05/T05 e suas ressalvas permanecem preservadas.
+A06 implementada para curadoria em 03/11/2026, D07/P14/T06; Caio concluiu a revisão de código/cenas e as 16 etapas em P16. Lucas concluiu o teste funcional em P17 com 15 marcas F9 e dificuldade nas trocas no ar. RF03 validado por Caio em sala técnica. **RF04 parcial**, com sprites humanos da Cyra base, da forma A e do inimigo A integrados. Forma B e inimigo B ainda provisórios. A05/T05 e suas ressalvas permanecem preservadas.
 
 - F5: Scenes/Test/TestRoomA06.tscn; A01 e A05 continuam abrindo por F6 nas respectivas cenas.
 - A/D/setas, Espaço, J preservados; E absorver, K investir, 1 A, 2 B, R reiniciar mantendo aquisições, F9 marcar com coleta.
 - Compilar: `dotnet build Cyra.sln`. Exportar preset **A06 Windows Desktop** para `build/a06-test/Cyra.exe`; executar `tools/Testing/Preparar_Pacote_A06.ps1` após exportar.
-- Abrir `build/a06-test/Executar_Teste.cmd` para logs e escolher máquina; `Cyra.exe` para modo comum. Não alterar políticas de segurança; relatar mensagem se houver bloqueio.
-- [A06: componentes, regras, parâmetros e resultados](docs/A06_Mimetismo_Habilidades_Aparencia.md), [roteiro atual](docs/Guia_Lucas_Testes.md), [T06 com validação de Caio](docs/evidencias/T06_A06_revisao.md).
+- Abrir `build/a06-test/Executar_Teste.cmd` para logs e escolher máquina. Para bloqueio do PowerShell, usar a [abertura direta do executável com coleta](docs/evidencias/T06_A06_validacao_Lucas.md#alternativa-para-este-pacote-a06).
+- Testar a arte de Victor com F5 ou o pacote Windows `build/a06-sprites-test`. A exportação abre a mesma sala A06. [Integração e roteiro visual](docs/A06_Sprites_Victor.md) · [Guia de entrega](docs/Guia_Entrega_Sprites_Victor.md).
+- [A06: componentes, regras, parâmetros e resultados](docs/A06_Mimetismo_Habilidades_Aparencia.md), [roteiro atual](docs/Guia_Lucas_Testes.md), [T06 com as execuções de Caio e Lucas](docs/evidencias/T06_A06_revisao.md).
 
 Sem save: aquisições/ativa sobrevivem somente a mortes/R no mesmo processo; nova abertura começa na base. Não há seções finais, obstáculos A07 ou apresentação A09. Documentação anterior abaixo preserva o contexto de sua versão; onde descreve A05 como execução principal, refere-se à entrega anterior.
 

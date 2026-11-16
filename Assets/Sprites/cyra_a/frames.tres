@@ -1,0 +1,60 @@
+[gd_resource type="SpriteFrames" load_steps=14 format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Sprites/cyra_a/idle.png" id="1"]
+[ext_resource type="Texture2D" path="res://Assets/Sprites/cyra_a/walk.png" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Sprites/cyra_a/jump.png" id="3"]
+
+[sub_resource type="AtlasTexture" id="idle_0"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="idle_1"]
+atlas = ExtResource("1")
+region = Rect2(500, 0, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="idle_2"]
+atlas = ExtResource("1")
+region = Rect2(0, 500, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="walk_0"]
+atlas = ExtResource("2")
+region = Rect2(0, 0, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="walk_1"]
+atlas = ExtResource("2")
+region = Rect2(500, 0, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="walk_2"]
+atlas = ExtResource("2")
+region = Rect2(0, 500, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="walk_3"]
+atlas = ExtResource("2")
+region = Rect2(500, 500, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="jump_0"]
+atlas = ExtResource("3")
+region = Rect2(0, 0, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="jump_1"]
+atlas = ExtResource("3")
+region = Rect2(500, 0, 500, 500)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="jump_2"]
+atlas = ExtResource("3")
+region = Rect2(0, 500, 500, 500)
+filter_clip = true
+
+[resource]
+animations = [{"frames": [{"duration": 1.0, "texture": SubResource("idle_0")}, {"duration": 1.0, "texture": SubResource("idle_1")}, {"duration": 1.0, "texture": SubResource("idle_2")}], "loop": true, "name": &"idle", "speed": 5.0},
+{"frames": [{"duration": 1.0, "texture": SubResource("walk_0")}, {"duration": 1.0, "texture": SubResource("walk_1")}, {"duration": 1.0, "texture": SubResource("walk_2")}, {"duration": 1.0, "texture": SubResource("walk_3")}], "loop": true, "name": &"walk", "speed": 8.0},
+{"frames": [{"duration": 1.0, "texture": SubResource("jump_0")}, {"duration": 1.0, "texture": SubResource("jump_1")}, {"duration": 1.0, "texture": SubResource("jump_2")}], "loop": false, "name": &"jump", "speed": 8.0}]

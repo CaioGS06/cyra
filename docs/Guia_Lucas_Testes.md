@@ -1,6 +1,10 @@
 # Guia atual — A06 / T06 (03/11/2026)
 
-Entrega para curadoria humana, RF04 parcial por falta de sprites humanos. Usar **build/a06-test completo**; abrir Executar_Teste.cmd e selecionar a máquina real. Nenhuma alteração de política de segurança é necessária ou solicitada: se houver bloqueio, enviar a mensagem ao responsável. Fechar o processo e abrir novamente começa sem aquisições. R reinicia o mundo/vida/usos mas mantém aquisições/ativa nesta execução. Sem save.
+Para a revisão de arte de 16/11, abra F5 ou o pacote completo `build/a06-sprites-test`. Ele carrega a mesma sala A06 com os sprites da Cyra base, da forma A e do inimigo A. Use o roteiro abaixo para jogar e concentre o relato no alinhamento dos pés, direção, transições e pose do inimigo atordoado. Ao equipar B, aparece a representação provisória roxa.
+
+Para gerar logs na exportação com arte, abra o `Executar_Teste.cmd` da própria pasta `a06-sprites-test` e selecione a máquina. Se o script for bloqueado, use a abertura direta descrita abaixo a partir dessa pasta. Omita o argumento `--cyra-build=package-5952a35952ec`, que identifica o pacote anterior, e mencione no relato que jogou a exportação com sprites.
+
+Entrega para curadoria humana, RF04 parcial por falta de sprites humanos. Usar **build/a06-test completo**; abrir Executar_Teste.cmd e selecionar a máquina real. O CMD depende da política de execução do Windows PowerShell. Se o PowerShell bloquear o script, siga a abertura direta abaixo e envie a mensagem ao responsável. Fechar o processo e abrir novamente começa sem aquisições. R reinicia o mundo/vida/usos mas mantém aquisições/ativa nesta execução. Sem save.
 
 Controles: A/D/setas andar; Espaço salto (novo toque no ar para A); J ataque; E absorção; K investida; 1 A; 2 B; R reinício; F9 marcador. Aquisição nova equipa imediatamente. Reabsorção mantém a ativa atual. Base azul, A verde, B roxo; dano causa flash vermelho temporário. Aparência técnica não equivale a sprites humanos.
 
@@ -30,6 +34,19 @@ O teste de reabsorção com usos aéreos gastos e os comandos simultâneos têm 
 Depois, preencher somente TestResults/<sessão>/relato.txt: concluiu/até onde, ocorrências/etapa, interrupções ou bloqueio do iniciador. Enviar a pasta inteira. A IA organiza logs; a aprovação e leitura do código são humanas e devem identificar quem as realizou. Capturas úteis a produzir: A adquirida, B ativa/HUD, antes/depois da morte. Sem capturas alegadas nesta entrega.
 
 Preparação pelo desenvolvedor: exportar preset A06 Windows Desktop para build/a06-test/Cyra.exe; executar tools/Testing/Preparar_Pacote_A06.ps1. O iniciador atual reconhece A01/A05/A06 e recusa descritor divergente; não muda a cena do release. Fora de pacote, o cenário padrão é A06. Usar -Cenario A05 para regressão com pacote próprio. Eventos A05 compartilhados cobrem movimento/combate/vida; eventos A06 cobrem absorção, aquisições, trocas, usos e retorno. Resumo descritivo sem aprovação automática.
+
+---
+
+## Abertura direta se o PowerShell bloquear o script
+
+Abra o **Prompt de Comando** na pasta descompactada que contém `Cyra.exe`. Use um nome de pasta novo para cada sessão e mantenha o mesmo nome nas três ocorrências do comando.
+
+```bat
+mkdir "TestResults\A06_Lucas_01"
+start "" /wait "Cyra.exe" --log-file "%CD%\TestResults\A06_Lucas_01\engine.log" -- --cyra-test --cyra-machine=Lucas --cyra-scenario=A06 --cyra-build=package-5952a35952ec --cyra-output="%CD%\TestResults\A06_Lucas_01"
+```
+
+Siga o roteiro com F9 e feche o jogo normalmente. Escreva um `relato.txt` curto na pasta criada e devolva a pasta. A abertura direta gera `session.jsonl` e `engine.log`. O manifesto, o resumo e o formulário automático são funções do iniciador PowerShell. Informe qual pacote usou para a análise poder relacionar a sessão.
 
 ---
 
